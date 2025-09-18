@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ================================================================================ -->
+<!-- ==== XSD information											             ==== -->
+<!-- ================================================================================ -->
+<!--
+	XSD Filename: 		Atrias-MIG6-CMS-IsAvailable-MsgDefinitions_v01-01p001.xsd
+	XSD Version: 		v01-01p001
+	XSD Issue date:		31/05/2016
+	XSD Issued by: 		Atrias
+	XSD Description:	
+		This XSD imports the correct messages types to enable to following operations from the WSDL:
+		- IsAvailable
+-->
+<xs:schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.atrias.be/msg/mig6/01-01/IsAvailable" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:msgtns="http://www.atrias.be/msg/mig6/01-01/IsAvailable"
+elementFormDefault="qualified">
+
+	<!-- ==================== -->
+	<!-- === Simple Types === -->
+	<!-- ==================== -->
+	<xs:simpleType name="Status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="available"/>
+			<xs:enumeration value="unavailable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ===================== -->
+	<!-- === Complex Types === -->
+	<!-- ===================== -->
+	<xs:complexType name="IsAvailableRequest"/>
+	<xs:complexType name="IsAvailableResponse">
+		<xs:sequence>
+			<xs:element name="Status" type="msgtns:Status"/>
+			<xs:element minOccurs="0" name="Description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SoapFaultDoc">
+		<xs:sequence>
+			<xs:element name="faultCode" type="xs:string"/>
+			<xs:element name="faultMessage" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

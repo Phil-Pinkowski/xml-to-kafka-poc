@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	XSD INFORMATION
+	XSD name: Atrias-MIG6-CMS-SendMessage-MsgDefinitions
+	Version: 02-17.005
+	Issue date: 22/11/2023
+	Issued by: Atrias
+	Description: This XSD imports the UMIG messages to enable the SendMessage operation from the WSDL.
+-->
+<xs:schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.atrias.be/msg/umig6/02-17/SendMessage" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:msgtns="http://www.atrias.be/msg/umig6/02-17/SendMessage"
+
+xmlns:rsm1-02-17="un:unece:260:data:EEM:02-17-NotificationTicketProcessing"
+xmlns:rsm7-02-17="un:unece:260:data:EEM:02-17-RequestInitiateStopAccess"
+xmlns:rsm14-02-17="un:unece:260:data:EEM:02-17-RequestRectification"
+xmlns:rsm16-02-17="un:unece:260:data:EEM:02-17-RequestStartAccess"
+
+xmlns:rsm19-02-15="un:unece:260:data:EEM:02-15-RequestUpdateCustomerMeteringConfiguration"
+
+xmlns:rsm1-02-09="un:unece:260:data:EEM:02-09-RequestPreswitchingData"
+
+xmlns:rsm5-02-07="un:unece:260:data:EEM:02-07-RequestInitiateLeavingCustomer"
+xmlns:rsm6-02-07="un:unece:260:data:EEM:02-07-RequestInitiateLocalProduction"
+xmlns:rsm8-02-07="un:unece:260:data:EEM:02-07-RequestInitiateUpdateAccess"
+xmlns:rsm10-02-07="un:unece:260:data:EEM:02-07-RequestMoveIn"
+xmlns:rsm15-02-07="un:unece:260:data:EEM:02-07-RequestRequestStart"
+xmlns:rsm18-02-07="un:unece:260:data:EEM:02-07-RequestUpdateBusinessMasterData"
+
+xmlns:rsm2-02-02="un:unece:260:data:EEM:02-02-RequestCancellationOfMeterRead"
+xmlns:rsm3-02-02="un:unece:260:data:EEM:02-02-RequestCancellationOfModule"
+xmlns:rsm4-02-02="un:unece:260:data:EEM:02-02-RequestIndexPlausibility"
+xmlns:rsm9-02-02="un:unece:260:data:EEM:02-02-RequestMeterRead"
+xmlns:rsm11-02-02="un:unece:260:data:EEM:02-02-RequestMoveOut"
+xmlns:rsm17-02-02="un:unece:260:data:EEM:02-02-RequestUpdateBalanceResponsibleParty"
+xmlns:rsm20-02-02="un:unece:260:data:EEM:02-02-RespondApprovalCancellation"
+xmlns:rsm21-02-02="un:unece:260:data:EEM:02-02-ResponseRequestRectification"
+
+elementFormDefault="qualified">
+	
+<!-- IMPORTS -->
+	<!-- Major version 02-17 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationTicketProcessing" schemaLocation="../XSD/NotificationTicketProcessing_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestInitiateStopAccess" schemaLocation="../XSD/RequestInitiateStopAccess_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestRectification" schemaLocation="../XSD/RequestRectification_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestStartAccess" schemaLocation="../XSD/RequestStartAccess_02-17p001.xsd"/>
+	<!-- Major version 02-15 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-15-RequestUpdateCustomerMeteringConfiguration" schemaLocation="../XSD/RequestUpdateCustomerMeteringConfiguration_02-15p002.xsd"/>
+	<!-- Major version 02-09 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-09-RequestPreswitchingData" schemaLocation="../XSD/RequestPreswitchingData_02-09p002.xsd"/>
+	<!-- Major version 02-07 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestInitiateLeavingCustomer" schemaLocation="../XSD/RequestInitiateLeavingCustomer_02-07p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestInitiateLocalProduction" schemaLocation="../XSD/RequestInitiateLocalProduction_02-07p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestInitiateUpdateAccess" schemaLocation="../XSD/RequestInitiateUpdateAccess_02-07p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestMoveIn" schemaLocation="../XSD/RequestMoveIn_02-07p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestRequestStart" schemaLocation="../XSD/RequestRequestStart_02-07p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-07-RequestUpdateBusinessMasterData" schemaLocation="../XSD/RequestUpdateBusinessMasterData_02-07p003.xsd"/>		
+	<!-- Major version 02-02 -->	
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestCancellationOfMeterRead" schemaLocation="../XSD/RequestCancellationOfMeterRead_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestCancellationOfModule" schemaLocation="../XSD/RequestCancellationOfModule_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestIndexPlausibility" schemaLocation="../XSD/RequestIndexPlausibility_02-02p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestMeterRead" schemaLocation="../XSD/RequestMeterRead_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestMoveOut" schemaLocation="../XSD/RequestMoveOut_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestUpdateBalanceResponsibleParty" schemaLocation="../XSD/RequestUpdateBalanceResponsibleParty_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RespondApprovalCancellation" schemaLocation="../XSD/RespondApprovalCancellation_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ResponseRequestRectification" schemaLocation="../XSD/ResponseRequestRectification_02-02p008.xsd"/>
+
+<!-- SIMPLE TYPES -->
+	<xs:simpleType name="MessageId">
+		<xs:restriction base="xs:string">
+			<xs:pattern
+				value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}">
+			</xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+
+<!-- COMPLEX TYPES -->
+	<xs:complexType name="SendMessageRequest">
+		<xs:sequence>
+			<xs:element name="Payload" type="msgtns:Payload"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SendMessageResponse">
+		<xs:sequence>
+			<xs:element name="MessageId" type="msgtns:MessageId"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SoapFaultDoc">
+		<xs:sequence>
+			<xs:element name="faultCode" type="xs:string"/>
+			<xs:element name="faultMessage" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Payload">
+		<xs:choice>
+			<!-- Major version 02-17 messages -->
+				<xs:element ref="rsm1-02-17:NotificationTicketProcessing"/>
+				<xs:element ref="rsm7-02-17:RequestInitiateStopAccess"/>
+				<xs:element ref="rsm14-02-17:RequestRectification"/>
+				<xs:element ref="rsm16-02-17:RequestStartAccess"/>
+			<!-- Major version 02-15 messages -->
+				<xs:element ref="rsm19-02-15:RequestUpdateCustomerMeteringConfiguration"/>
+			<!-- Major version 02-09 messages -->
+				<xs:element ref="rsm1-02-09:RequestPreswitchingData"/>
+			<!-- Major version 02-07 messages -->
+				<xs:element ref="rsm5-02-07:RequestInitiateLeavingCustomer"/>
+				<xs:element ref="rsm6-02-07:RequestInitiateLocalProduction"/>
+				<xs:element ref="rsm8-02-07:RequestInitiateUpdateAccess"/>
+				<xs:element ref="rsm10-02-07:RequestMoveIn"/>
+				<xs:element ref="rsm15-02-07:RequestRequestStart"/>
+				<xs:element ref="rsm18-02-07:RequestUpdateBusinessMasterData"/>
+			<!-- Major version 02-02 messages -->
+				<xs:element ref="rsm2-02-02:RequestCancellationOfMeterRead"/>
+				<xs:element ref="rsm3-02-02:RequestCancellationOfModule"/>
+				<xs:element ref="rsm4-02-02:RequestIndexPlausibility"/>
+				<xs:element ref="rsm9-02-02:RequestMeterRead"/>
+				<xs:element ref="rsm11-02-02:RequestMoveOut"/>
+				<xs:element ref="rsm17-02-02:RequestUpdateBalanceResponsibleParty"/>
+				<xs:element ref="rsm20-02-02:RespondApprovalCancellation"/>
+				<xs:element ref="rsm21-02-02:ResponseRequestRectification"/>
+		</xs:choice>
+	</xs:complexType>
+	
+</xs:schema>

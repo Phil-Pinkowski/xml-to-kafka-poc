@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:rsm="un:unece:260:data:EEM:02-17-NotificationofUnsolicitedContractualStatusChange" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="un:unece:260:data:EEM:02-17-NotificationofUnsolicitedContractualStatusChange" version="02-17.003" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="NotificationofUnsolicitedContractualStatusChange" type="rsm:NotificationofUnsolicitedContractualStatusChangeType" />
+  <xsd:complexType name="NotificationofUnsolicitedContractualStatusChangeType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="HeaderBEEnergyDocument" type="rsm:BEEnergyDocument" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="ProcessBEEnergyContext" type="rsm:BEEnergyContext" />
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="PayloadBEMPEvent" type="rsm:BEMPEvent" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyContext">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyBusinessProcess">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:BusinessReasonCodeType_000115">
+              <xsd:enumeration value="BG0" />
+              <xsd:enumeration value="BG1" />
+              <xsd:enumeration value="BG2" />
+              <xsd:enumeration value="BG3" />
+              <xsd:enumeration value="BG4" />
+              <xsd:enumeration value="BG5" />
+              <xsd:enumeration value="BS3" />
+              <xsd:enumeration value="E05" />
+              <xsd:enumeration value="E32" />
+              <xsd:enumeration value="E56" />
+              <xsd:enumeration value="E66" />
+              <xsd:enumeration value="ERR" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyBusinessLabel">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:BusinessLabelCodeType_BE000051">
+              <xsd:enumeration value="BJ8" />
+              <xsd:enumeration value="BK0" />
+              <xsd:enumeration value="BK2" />
+              <xsd:enumeration value="BQ7" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyIndustryClassification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:SectorAreaIdentificationCodeType_000116">
+              <xsd:enumeration value="23" />
+              <xsd:enumeration value="27" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyDocument">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="DocumentType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DocumentNameCodeType_000098">
+              <xsd:enumeration value="407" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Creation">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="SenderBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="RecipientBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="IssuerBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="AddresseeBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="DocumentStructureRevision">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:NoLanguageTextType_BE000491">
+            <xsd:pattern value="[0-9]{2}-[0-9]{2}\.[0-9]{3}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="DocumentProcessing">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:ProcessingType_BE000708">
+              <xsd:enumeration value="BH8" />
+              <xsd:enumeration value="BMO" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="DocumentSequence">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:OrdinalType_000123">
+            <xsd:minInclusive value="1" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverallReport">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:IdentifierType_000353">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyParty">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:PartyIdentifierType_000112">
+              <xsd:pattern value="[0-9]{13}" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEMPEvent">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:choice>
+        <xsd:element minOccurs="1" maxOccurs="1" name="StartOccurrence">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:dateTime">
+              <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element minOccurs="1" maxOccurs="1" name="EndOccurrence">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:dateTime">
+              <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:choice>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Function">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DocumentFunctionCodeType_000118">
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="BalanceSupplierNextInvolvedBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="SDPUsedServiceDeliveryPointLocation" type="rsm:ServiceDeliveryPointLocation" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="PODUsedDomainLocation" type="rsm:DomainLocation" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="NotificationReasonType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:BusinessReasonCodeType_000115">
+              <xsd:enumeration value="BCO" />
+              <xsd:enumeration value="BQ8" />
+              <xsd:enumeration value="BQ9" />
+              <xsd:enumeration value="BR0" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="ProcessTriggerBETransactionCharacteristic" type="rsm:BETransactionCharacteristic" />
+      <xsd:element minOccurs="0" maxOccurs="1" name="OriginalTransactionIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|.{1,35}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelatedTransactionIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|.{1,35}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="RectificationTicketIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:maxLength value="50" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="CancellationReasonType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:CancellationReasonCodeType_000478">
+              <xsd:enumeration value="BP5" />
+              <xsd:enumeration value="BP6" />
+              <xsd:enumeration value="BP7" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BETransactionCharacteristic">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyBusinessLabel">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:BusinessLabelCodeType_BE000051">
+              <xsd:enumeration value="BB2" />
+              <xsd:enumeration value="BG8" />
+              <xsd:enumeration value="BS6" />
+              <xsd:enumeration value="BS8" />
+              <xsd:enumeration value="BS9" />
+              <xsd:enumeration value="BT0" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DomainLocation">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DomainIdentifierType_000122">
+              <xsd:pattern value="[0-9]{18}" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ServiceDeliveryPointLocation">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="HeadpointIdentificationDomainLocation" type="rsm:DomainLocation" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="ServiceComponentIdentification" type="rsm:ServiceIdentifierType_BE000001" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BusinessLabelCodeType_BE000051">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:LabelsCode">
+        <xsd:attribute name="listIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="BusinessReasonCodeType_000115">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:BusinessReasonCode">
+        <xsd:attribute name="listIdentifier" use="optional">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="CancellationReasonCodeType_000478">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:CancellationReasonCode">
+        <xsd:attribute name="listIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DocumentFunctionCodeType_000118">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:DocumentFunctionCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DocumentNameCodeType_000098">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:DocumentNameCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DomainIdentifierType_000122">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="89" />
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="IdentifierType_000353">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="NoLanguageTextType_BE000491">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="OrdinalType_000123">
+    <xsd:restriction base="xsd:integer" />
+  </xsd:simpleType>
+  <xsd:complexType name="PartyIdentifierType_000112">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="ProcessingType_BE000708">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:ProcessingType">
+        <xsd:attribute name="listIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="SectorAreaIdentificationCodeType_000116">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:SectorAreaIdentificationCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="ServiceIdentifierType_BE000001">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="86" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="TransactionIdentifierType_000361">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="BusinessReasonCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BCO" />
+      <xsd:enumeration value="BG0" />
+      <xsd:enumeration value="BG1" />
+      <xsd:enumeration value="BG2" />
+      <xsd:enumeration value="BG3" />
+      <xsd:enumeration value="BG4" />
+      <xsd:enumeration value="BG5" />
+      <xsd:enumeration value="BQ8" />
+      <xsd:enumeration value="BQ9" />
+      <xsd:enumeration value="BR0" />
+      <xsd:enumeration value="BS3" />
+      <xsd:enumeration value="E05" />
+      <xsd:enumeration value="E32" />
+      <xsd:enumeration value="E56" />
+      <xsd:enumeration value="E66" />
+      <xsd:enumeration value="ERR" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CancellationReasonCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BP5" />
+      <xsd:enumeration value="BP6" />
+      <xsd:enumeration value="BP7" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeListIdentificationCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BEL" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeListResponsibleAgencyCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="260" />
+      <xsd:enumeration value="6" />
+      <xsd:enumeration value="86" />
+      <xsd:enumeration value="89" />
+      <xsd:enumeration value="9" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DocumentFunctionCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="9" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DocumentNameCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="407" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LabelsCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BB2" />
+      <xsd:enumeration value="BG8" />
+      <xsd:enumeration value="BJ8" />
+      <xsd:enumeration value="BK0" />
+      <xsd:enumeration value="BK2" />
+      <xsd:enumeration value="BQ7" />
+      <xsd:enumeration value="BS6" />
+      <xsd:enumeration value="BS8" />
+      <xsd:enumeration value="BS9" />
+      <xsd:enumeration value="BT0" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ProcessingType">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BH8" />
+      <xsd:enumeration value="BMO" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SectorAreaIdentificationCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="23" />
+      <xsd:enumeration value="27" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

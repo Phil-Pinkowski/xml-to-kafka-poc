@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:rsm="un:unece:260:data:EEM:02-16-MeterReadNonContinuousForBilling" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="un:unece:260:data:EEM:02-16-MeterReadNonContinuousForBilling" version="02-16.001" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="MeterReadNonContinuousForBilling" type="rsm:MeterReadNonContinuousForBillingType" />
+  <xsd:complexType name="MeterReadNonContinuousForBillingType">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="HeaderBEEnergyDocument" type="rsm:BEEnergyDocument" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="ProcessBEEnergyContext" type="rsm:BEEnergyContext" />
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="PayloadBEEnergyTimeSeries" type="rsm:BEEnergyTimeSeries" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyContext">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyBusinessProcess">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:BusinessReasonCodeType_000115">
+              <xsd:enumeration value="B95" />
+              <xsd:enumeration value="BA9" />
+              <xsd:enumeration value="BG0" />
+              <xsd:enumeration value="BG1" />
+              <xsd:enumeration value="BG2" />
+              <xsd:enumeration value="BG3" />
+              <xsd:enumeration value="BG4" />
+              <xsd:enumeration value="BK1" />
+              <xsd:enumeration value="BS3" />
+              <xsd:enumeration value="BU1" />
+              <xsd:enumeration value="E20" />
+              <xsd:enumeration value="E23" />
+              <xsd:enumeration value="E32" />
+              <xsd:enumeration value="E53" />
+              <xsd:enumeration value="E66" />
+              <xsd:enumeration value="ERR" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="EnergyIndustryClassification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:SectorAreaIdentificationCodeType_000116">
+              <xsd:enumeration value="23" />
+              <xsd:enumeration value="27" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyDocument">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="DocumentType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DocumentNameCodeType_000098">
+              <xsd:enumeration value="E11" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Creation">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="SenderBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="RecipientBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="IssuerBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="AddresseeBEEnergyParty" type="rsm:BEEnergyParty" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="DocumentStructureRevision">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:NoLanguageTextType_BE000491">
+            <xsd:pattern value="[0-9]{2}-[0-9]{2}\.[0-9]{3}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="DocumentProcessing">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:ProcessingType_BE000708">
+              <xsd:enumeration value="BH8" />
+              <xsd:enumeration value="BMO" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="DocumentSequence">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:OrdinalType_000123">
+            <xsd:minInclusive value="1" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="OverallReport">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:IdentifierType_000353">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyParty">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:PartyIdentifierType_000112">
+              <xsd:pattern value="[0-9]{13}" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BEEnergyTimeSeries">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Function">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DocumentFunctionCodeType_000118">
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="RelatedTransactionIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|.{1,35}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="OriginalTransactionIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}|.{1,35}" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="RectificationTicketIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:TransactionIdentifierType_000361">
+            <xsd:maxLength value="50" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="ObservationPeriodTimeSeriesPeriod" type="rsm:TimeSeriesPeriod" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="SDPUsedServiceDeliveryPointLocation" type="rsm:ServiceDeliveryPointLocation" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="PODUsedDomainLocation" type="rsm:DomainLocation" />
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="MeteringInstallationUsedMeterFacility" type="rsm:MeterFacility" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BERegisterFacility">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="RegisterIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:EEMIdentifierType_000110">
+            <xsd:maxLength value="50" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="RegisterIntervalRegisterReadPeriod" type="rsm:RegisterReadPeriod" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ConversionFactorMeasurement">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="FactorValue">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:EEMMeasureType_000152">
+              <xsd:fractionDigits value="10" />
+              <xsd:totalDigits value="20" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DomainLocation">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Identification">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:DomainIdentifierType_000122">
+              <xsd:pattern value="[0-9]{18}" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EstimatedMetrics">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Total">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:IntegerQuantityType_000119">
+              <xsd:totalDigits value="10" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MeterFacility">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="MeterIdentification">
+        <xsd:simpleType>
+          <xsd:restriction base="rsm:EEMIdentifierType_000110">
+            <xsd:maxLength value="50" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="unbounded" name="RegisterInstallationBERegisterFacility" type="rsm:BERegisterFacility" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RegisterObservation">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="RegisterQuantity">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:EEMMeasureType_000152">
+              <xsd:fractionDigits value="10" />
+              <xsd:totalDigits value="20" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="QuantityQuality">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:QuantityQualityCodeType_000125">
+              <xsd:enumeration value="125" />
+              <xsd:enumeration value="56" />
+              <xsd:enumeration value="62" />
+              <xsd:enumeration value="86" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="MeterReadingOriginType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:MeterReadingOriginCodeType_000139">
+              <xsd:enumeration value="E26" />
+              <xsd:enumeration value="E27" />
+              <xsd:enumeration value="E28" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="QualityReasonType">
+        <xsd:complexType>
+          <xsd:simpleContent>
+            <xsd:restriction base="rsm:ReasonDescriptionCodeType_BE000062">
+              <xsd:enumeration value="24" />
+              <xsd:enumeration value="40" />
+              <xsd:enumeration value="B57" />
+              <xsd:enumeration value="B58" />
+              <xsd:enumeration value="B59" />
+              <xsd:enumeration value="B86" />
+              <xsd:enumeration value="B96" />
+              <xsd:enumeration value="BCZ" />
+            </xsd:restriction>
+          </xsd:simpleContent>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RegisterReadPeriod">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="1" name="Start">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" maxOccurs="1" name="End">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:choice>
+        <xsd:element minOccurs="1" maxOccurs="1" name="RegisterBeginIndexDetailRegisterObservation" type="rsm:RegisterObservation" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="RegisterEndIndexDetailRegisterObservation" type="rsm:RegisterObservation" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="RegisterPeriodQuantityDetailRegisterObservation" type="rsm:RegisterObservation" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="RegisterReadAnnualEstimateEstimatedMetrics" type="rsm:EstimatedMetrics" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="RegisterReadMonthlyEstimateEstimatedMetrics" type="rsm:EstimatedMetrics" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="GasConversionFactorConversionFactorMeasurement" type="rsm:ConversionFactorMeasurement" />
+        <xsd:element minOccurs="1" maxOccurs="1" name="GasCaloricValueConversionFactorMeasurement" type="rsm:ConversionFactorMeasurement" />
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ServiceDeliveryPointLocation">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="HeadpointIdentificationDomainLocation" type="rsm:DomainLocation" />
+      <xsd:element minOccurs="1" maxOccurs="1" name="ServiceComponentIdentification" type="rsm:ServiceIdentifierType_BE000001" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TimeSeriesPeriod">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" maxOccurs="1" name="Start">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="1" maxOccurs="1" name="End">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:dateTime">
+            <xsd:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BusinessReasonCodeType_000115">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:BusinessReasonCode">
+        <xsd:attribute name="listIdentifier" use="optional">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DocumentFunctionCodeType_000118">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:DocumentFunctionCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DocumentNameCodeType_000098">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:DocumentNameCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="DomainIdentifierType_000122">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="89" />
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="EEMIdentifierType_000110">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:complexType name="EEMMeasureType_000152">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:decimal">
+        <xsd:attribute name="unitCode" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:MeasurementUnitCommonCode">
+              <xsd:enumeration value="E46" />
+              <xsd:enumeration value="K3" />
+              <xsd:enumeration value="KVA" />
+              <xsd:enumeration value="KWH" />
+              <xsd:enumeration value="KWT" />
+              <xsd:enumeration value="MTQ" />
+              <xsd:enumeration value="NM3" />
+              <xsd:enumeration value="Z16" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="IdentifierType_000353">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:complexType name="IntegerQuantityType_000119">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:integer">
+        <xsd:attribute name="unitCode" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:MeasurementUnitCommonCode">
+              <xsd:enumeration value="AMP" />
+              <xsd:enumeration value="ANN" />
+              <xsd:enumeration value="B8" />
+              <xsd:enumeration value="D90" />
+              <xsd:enumeration value="DAY" />
+              <xsd:enumeration value="E46" />
+              <xsd:enumeration value="EA" />
+              <xsd:enumeration value="HUR" />
+              <xsd:enumeration value="K3" />
+              <xsd:enumeration value="KVA" />
+              <xsd:enumeration value="KVR" />
+              <xsd:enumeration value="KVT" />
+              <xsd:enumeration value="KWH" />
+              <xsd:enumeration value="KWN" />
+              <xsd:enumeration value="KWS" />
+              <xsd:enumeration value="KWT" />
+              <xsd:enumeration value="MAW" />
+              <xsd:enumeration value="MIN" />
+              <xsd:enumeration value="MON" />
+              <xsd:enumeration value="MQH" />
+              <xsd:enumeration value="MTQ" />
+              <xsd:enumeration value="MWH" />
+              <xsd:enumeration value="NM3" />
+              <xsd:enumeration value="Q37" />
+              <xsd:enumeration value="Q38" />
+              <xsd:enumeration value="Q39" />
+              <xsd:enumeration value="Q40" />
+              <xsd:enumeration value="Q41" />
+              <xsd:enumeration value="Q42" />
+              <xsd:enumeration value="SM3" />
+              <xsd:enumeration value="Z15" />
+              <xsd:enumeration value="Z16" />
+              <xsd:enumeration value="Z17" />
+              <xsd:enumeration value="Z19" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="MeterReadingOriginCodeType_000139">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:MeterReadingOriginCode">
+        <xsd:attribute name="listIdentifier" use="optional">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="NoLanguageTextType_BE000491">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="OrdinalType_000123">
+    <xsd:restriction base="xsd:integer" />
+  </xsd:simpleType>
+  <xsd:complexType name="PartyIdentifierType_000112">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="9" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="ProcessingType_BE000708">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:ProcessingType">
+        <xsd:attribute name="listIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="QuantityQualityCodeType_000125">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:QuantityQualityCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="ReasonDescriptionCodeType_BE000062">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:ReasonDescriptionCode">
+        <xsd:attribute name="listIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListIdentificationCode">
+              <xsd:enumeration value="BEL" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="260" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="SectorAreaIdentificationCodeType_000116">
+    <xsd:simpleContent>
+      <xsd:extension base="rsm:SectorAreaIdentificationCode">
+        <xsd:attribute name="listAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="6" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="ServiceIdentifierType_BE000001">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute name="schemeAgencyIdentifier" use="required">
+          <xsd:simpleType>
+            <xsd:restriction base="rsm:CodeListResponsibleAgencyCode">
+              <xsd:enumeration value="86" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="TransactionIdentifierType_000361">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="BusinessReasonCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="B95" />
+      <xsd:enumeration value="BA9" />
+      <xsd:enumeration value="BG0" />
+      <xsd:enumeration value="BG1" />
+      <xsd:enumeration value="BG2" />
+      <xsd:enumeration value="BG3" />
+      <xsd:enumeration value="BG4" />
+      <xsd:enumeration value="BK1" />
+      <xsd:enumeration value="BS3" />
+      <xsd:enumeration value="BU1" />
+      <xsd:enumeration value="E20" />
+      <xsd:enumeration value="E23" />
+      <xsd:enumeration value="E32" />
+      <xsd:enumeration value="E53" />
+      <xsd:enumeration value="E66" />
+      <xsd:enumeration value="ERR" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeListIdentificationCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BEL" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CodeListResponsibleAgencyCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="260" />
+      <xsd:enumeration value="6" />
+      <xsd:enumeration value="86" />
+      <xsd:enumeration value="89" />
+      <xsd:enumeration value="9" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DocumentFunctionCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="9" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DocumentNameCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="E11" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MeasurementUnitCommonCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="AMP" />
+      <xsd:enumeration value="ANN" />
+      <xsd:enumeration value="B8" />
+      <xsd:enumeration value="D90" />
+      <xsd:enumeration value="DAY" />
+      <xsd:enumeration value="E46" />
+      <xsd:enumeration value="EA" />
+      <xsd:enumeration value="HUR" />
+      <xsd:enumeration value="K3" />
+      <xsd:enumeration value="KVA" />
+      <xsd:enumeration value="KVR" />
+      <xsd:enumeration value="KVT" />
+      <xsd:enumeration value="KWH" />
+      <xsd:enumeration value="KWN" />
+      <xsd:enumeration value="KWS" />
+      <xsd:enumeration value="KWT" />
+      <xsd:enumeration value="MAW" />
+      <xsd:enumeration value="MIN" />
+      <xsd:enumeration value="MON" />
+      <xsd:enumeration value="MQH" />
+      <xsd:enumeration value="MTQ" />
+      <xsd:enumeration value="MWH" />
+      <xsd:enumeration value="NM3" />
+      <xsd:enumeration value="Q37" />
+      <xsd:enumeration value="Q38" />
+      <xsd:enumeration value="Q39" />
+      <xsd:enumeration value="Q40" />
+      <xsd:enumeration value="Q41" />
+      <xsd:enumeration value="Q42" />
+      <xsd:enumeration value="SM3" />
+      <xsd:enumeration value="Z15" />
+      <xsd:enumeration value="Z16" />
+      <xsd:enumeration value="Z17" />
+      <xsd:enumeration value="Z19" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MeterReadingOriginCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="E26" />
+      <xsd:enumeration value="E27" />
+      <xsd:enumeration value="E28" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ProcessingType">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="BH8" />
+      <xsd:enumeration value="BMO" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="QuantityQualityCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="125" />
+      <xsd:enumeration value="56" />
+      <xsd:enumeration value="62" />
+      <xsd:enumeration value="86" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ReasonDescriptionCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="24" />
+      <xsd:enumeration value="40" />
+      <xsd:enumeration value="B57" />
+      <xsd:enumeration value="B58" />
+      <xsd:enumeration value="B59" />
+      <xsd:enumeration value="B86" />
+      <xsd:enumeration value="B96" />
+      <xsd:enumeration value="BCZ" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SectorAreaIdentificationCode">
+    <xsd:restriction base="xsd:token">
+      <xsd:enumeration value="23" />
+      <xsd:enumeration value="27" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

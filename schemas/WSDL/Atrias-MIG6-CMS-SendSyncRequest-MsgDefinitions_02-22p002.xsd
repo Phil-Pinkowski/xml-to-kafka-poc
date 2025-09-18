@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	XSD INFORMATION
+	XSD name: Atrias-MIG6-CMS-SendSyncRequest-MsgDefinitions
+	Version: 02-22.002
+	Issue date: 13/01/2025
+	Issued by: Atrias
+	Description: This XSD imports the UMIG messages to enable the following operations from the WSDL:
+		- PreswitchBasic
+		- PreswitchLight
+		- StartAccess
+		- MoveIn
+		- IndexPlausibility
+-->
+<xs:schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.atrias.be/msg/umig6/02-22/SendSyncRequest" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:msgtns="http://www.atrias.be/msg/umig6/02-22/SendSyncRequest" 
+
+xmlns:rsm2-02-22="un:unece:260:data:EEM:02-22-LightPreswitchInformationSynchronous"
+
+xmlns:rsm4-02-17="un:unece:260:data:EEM:02-17-RequestStartAccessSynchronous"
+xmlns:rsm6-02-17="un:unece:260:data:EEM:02-17-ResponseRequestNetUserInteraction"
+
+xmlns:rsm8-02-15="un:unece:260:data:EEM:02-15-MeterReadEndIndexSynchronous"
+xmlns:rsm5-02-15="un:unece:260:data:EEM:02-15-RequestMoveInSynchronous"
+
+xmlns:rsm9-02-12="un:unece:260:data:EEM:02-12-BasicPreswitchInformationSynchronous"
+
+xmlns:rsm1-02-09="un:unece:260:data:EEM:02-09-RequestPreswitchingData"
+
+xmlns:rsm7-02-02="un:unece:260:data:EEM:02-02-RequestIndexPlausibility"
+
+elementFormDefault="qualified">
+
+<!-- IMPORTS -->
+	<!-- Major version 02-22 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-22-LightPreswitchInformationSynchronous" schemaLocation="../XSD/LightPreswitchInformationSynchronous_02-22p002.xsd"/>
+	<!-- Major version 02-17 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestStartAccessSynchronous" schemaLocation="../XSD/RequestStartAccessSynchronous_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-ResponseRequestNetUserInteraction" schemaLocation="../XSD/ResponseRequestNetUserInteraction_02-17p004.xsd"/>
+	<!-- Major version 02-15 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-15-MeterReadEndIndexSynchronous" schemaLocation="../XSD/MeterReadEndIndexSynchronous_02-15p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-15-RequestMoveInSynchronous" schemaLocation="../XSD/RequestMoveInSynchronous_02-15p001.xsd"/>
+	<!-- Major version 02-12 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-12-BasicPreswitchInformationSynchronous" schemaLocation="../XSD/BasicPreswitchInformationSynchronous_02-12p003.xsd"/>
+	<!-- Major version 02-09 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-09-RequestPreswitchingData" schemaLocation="../XSD/RequestPreswitchingData_02-09p002.xsd"/>
+	<!-- Major version 02-02 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestIndexPlausibility" schemaLocation="../XSD/RequestIndexPlausibility_02-02p002.xsd"/>
+	
+<!-- COMPLEX TYPES -->
+	<xs:complexType name="PreSwitchBasicRequest">
+		<xs:sequence>
+			<xs:element ref="rsm1-02-09:RequestPreswitchingData"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="PreSwitchBasicResponse">
+		<xs:sequence>
+			<xs:element ref="rsm9-02-12:BasicPreswitchInformationSynchronous"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType  name="PreSwitchLightRequest">
+		<xs:sequence>
+			<xs:element ref="rsm1-02-09:RequestPreswitchingData"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="PreSwitchLightResponse">
+		<xs:sequence>
+			<xs:element ref="rsm2-02-22:LightPreswitchInformationSynchronous"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="StartAccessRequest">
+		<xs:sequence>
+			<xs:element ref="rsm4-02-17:RequestStartAccessSynchronous"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="StartAccessResponse">
+		<xs:sequence>
+			<xs:element ref="rsm6-02-17:ResponseRequestNetUserInteraction"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name = "MoveInRequest">
+		<xs:sequence>
+			<xs:element ref="rsm5-02-15:RequestMoveInSynchronous"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="MoveInResponse">
+		<xs:sequence>
+			<xs:element ref="rsm6-02-17:ResponseRequestNetUserInteraction"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="IndexPlausibilityRequest">
+		<xs:sequence>
+			<xs:element ref="rsm7-02-02:RequestIndexPlausibility"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="IndexPlausibilityResponse">
+		<xs:sequence>
+			<xs:element ref="rsm8-02-15:MeterReadEndIndexSynchronous"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SoapFaultDoc">
+		<xs:sequence>
+			<xs:element name="faultCode" type="xs:string"/>
+			<xs:element name="faultMessage" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

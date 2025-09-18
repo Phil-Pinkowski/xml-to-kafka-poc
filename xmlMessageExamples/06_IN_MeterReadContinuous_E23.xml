@@ -1,0 +1,2413 @@
+<MeterReadContinuous
+	xmlns="un:unece:260:data:EEM:02-02-MeterReadContinuous">
+	<HeaderBEEnergyDocument>
+		<Identification>1f652666-5818-11f0-b033-8fac4faf0700</Identification>
+		<DocumentType listAgencyIdentifier="260">E13</DocumentType>
+		<Creation>2025-07-03T21:09:06.516+01:00</Creation>
+		<SenderBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5414488001902</Identification>
+		</SenderBEEnergyParty>
+		<RecipientBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5499764353302</Identification>
+		</RecipientBEEnergyParty>
+		<IssuerBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5430000544054</Identification>
+		</IssuerBEEnergyParty>
+		<AddresseeBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5499764353302</Identification>
+		</AddresseeBEEnergyParty>
+		<DocumentStructureRevision>02-02.003</DocumentStructureRevision>
+	</HeaderBEEnergyDocument>
+	<ProcessBEEnergyContext>
+		<EnergyBusinessProcess listIdentifier="BEL" listAgencyIdentifier="260">E23</EnergyBusinessProcess>
+		<EnergyIndustryClassification listAgencyIdentifier="6">23</EnergyIndustryClassification>
+	</ProcessBEEnergyContext>
+	<PayloadBEEnergyTimeSeries>
+		<Identification>1f652666-5818-11f0-ad33-8fac4faf0700</Identification>
+		<Function listAgencyIdentifier="6">9</Function>
+		<ObservationPeriodTimeSeriesPeriod>
+			<Start>2025-07-01T23:00:00.000+01:00</Start>
+			<End>2025-07-02T23:00:00.000+01:00</End>
+			<ResolutionDuration>PT15M</ResolutionDuration>
+		</ObservationPeriodTimeSeriesPeriod>
+		<SDPUsedServiceDeliveryPointLocation>
+			<HeadpointIdentificationDomainLocation>
+				<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+			</HeadpointIdentificationDomainLocation>
+			<ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</ServiceComponentIdentification>
+		</SDPUsedServiceDeliveryPointLocation>
+		<PODUsedDomainLocation>
+			<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+		</PODUsedDomainLocation>
+		<ProductIncludedProductCharacteristic>
+			<Identification schemeAgencyIdentifier="9">8716867000016</Identification>
+			<UnitType listAgencyIdentifier="6">KWT</UnitType>
+		</ProductIncludedProductCharacteristic>
+		<MeteringInstallationUsedMeterFacility>
+			<MeterIdentification>541448820053780377</MeterIdentification>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>B36B31KWT</RegisterIdentification>
+			</RegisterInstallationBERegisterFacility>
+		</MeteringInstallationUsedMeterFacility>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>1</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>2</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>3</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>4</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>5</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>6</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>7</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>8</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>9</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>10</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>11</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>12</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>13</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>14</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>15</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>16</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>17</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>18</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>19</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>20</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>21</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>22</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>23</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>24</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>25</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>26</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>27</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>28</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>29</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>30</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>31</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>32</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>33</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>34</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>35</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>36</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>37</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>38</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>39</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>40</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>41</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>42</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>43</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>44</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>45</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>46</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>47</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>48</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>49</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>50</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>51</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>52</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>53</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>54</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>55</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>56</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>57</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>58</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>59</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>60</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>61</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>62</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>63</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>64</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>65</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>66</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>67</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>68</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>69</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>70</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>71</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>72</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>73</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>74</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>75</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>76</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>77</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>78</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>79</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>80</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>81</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>82</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>83</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>84</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>85</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>86</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>87</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>88</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>89</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>90</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>91</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>92</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>93</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>94</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>95</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>96</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+	</PayloadBEEnergyTimeSeries>
+	<PayloadBEEnergyTimeSeries>
+		<Identification>1f652666-5818-11f0-ae33-8fac4faf0700</Identification>
+		<Function listAgencyIdentifier="6">9</Function>
+		<ObservationPeriodTimeSeriesPeriod>
+			<Start>2025-07-01T23:00:00.000+01:00</Start>
+			<End>2025-07-02T23:00:00.000+01:00</End>
+			<ResolutionDuration>PT15M</ResolutionDuration>
+		</ObservationPeriodTimeSeriesPeriod>
+		<SDPUsedServiceDeliveryPointLocation>
+			<HeadpointIdentificationDomainLocation>
+				<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+			</HeadpointIdentificationDomainLocation>
+			<ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</ServiceComponentIdentification>
+		</SDPUsedServiceDeliveryPointLocation>
+		<PODUsedDomainLocation>
+			<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+		</PODUsedDomainLocation>
+		<ProductIncludedProductCharacteristic>
+			<Identification schemeAgencyIdentifier="9">8716867000016</Identification>
+			<UnitType listAgencyIdentifier="6">KWT</UnitType>
+		</ProductIncludedProductCharacteristic>
+		<MeteringInstallationUsedMeterFacility>
+			<MeterIdentification>541448820053780377</MeterIdentification>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>B37B31KWT</RegisterIdentification>
+			</RegisterInstallationBERegisterFacility>
+		</MeteringInstallationUsedMeterFacility>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>1</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.436</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>2</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.5</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>3</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.484</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>4</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.44</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>5</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.388</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>6</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.388</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>7</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.42</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>8</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.436</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>9</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.52</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>10</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.484</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>11</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.432</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>12</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.384</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>13</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.712</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>14</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.34</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>15</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.504</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>16</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.528</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>17</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.48</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>18</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.424</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>19</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.456</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>20</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.496</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>21</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.52</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>22</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.488</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>23</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.544</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>24</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.548</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>25</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.4</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>26</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.536</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>27</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.148</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>28</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.024</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>29</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>30</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>31</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>32</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>33</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>34</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>35</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>36</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>37</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>38</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>39</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>40</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>41</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>42</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>43</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>44</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>45</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>46</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>47</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>48</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>49</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>50</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>51</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>52</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>53</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>54</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>55</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>56</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>57</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>58</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>59</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>60</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>61</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>62</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>63</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>64</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>65</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>66</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>67</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>68</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>69</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>70</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>71</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>72</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>73</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>74</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>75</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.152</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>76</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.16</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>77</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.008</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>78</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.088</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>79</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.18</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>80</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.2</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>81</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.184</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>82</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>83</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>84</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>85</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.224</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>86</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.364</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>87</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.508</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>88</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.472</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>89</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.472</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>90</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.46</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>91</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.42</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>92</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.496</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>93</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.496</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>94</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.516</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>95</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.472</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>96</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.468</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+	</PayloadBEEnergyTimeSeries>
+	<PayloadBEEnergyTimeSeries>
+		<Identification>1f652666-5818-11f0-af33-8fac4faf0700</Identification>
+		<Function listAgencyIdentifier="6">9</Function>
+		<ObservationPeriodTimeSeriesPeriod>
+			<Start>2025-07-01T23:00:00.000+01:00</Start>
+			<End>2025-07-02T23:00:00.000+01:00</End>
+			<ResolutionDuration>PT15M</ResolutionDuration>
+		</ObservationPeriodTimeSeriesPeriod>
+		<SDPUsedServiceDeliveryPointLocation>
+			<HeadpointIdentificationDomainLocation>
+				<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+			</HeadpointIdentificationDomainLocation>
+			<ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</ServiceComponentIdentification>
+		</SDPUsedServiceDeliveryPointLocation>
+		<PODUsedDomainLocation>
+			<Identification schemeAgencyIdentifier="89">541448820053780377</Identification>
+		</PODUsedDomainLocation>
+		<ProductIncludedProductCharacteristic>
+			<Identification schemeAgencyIdentifier="9">8716867000016</Identification>
+			<UnitType listAgencyIdentifier="6">KWT</UnitType>
+		</ProductIncludedProductCharacteristic>
+		<MeteringInstallationUsedMeterFacility>
+			<MeterIdentification>541448820053780377</MeterIdentification>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>B37BCYKWT</RegisterIdentification>
+			</RegisterInstallationBERegisterFacility>
+		</MeteringInstallationUsedMeterFacility>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>1</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>2</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>3</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>4</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>5</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>6</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>7</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>8</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>9</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>10</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>11</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>12</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>13</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>14</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>15</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>16</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>17</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>18</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>19</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>20</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>21</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>22</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>23</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>24</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>25</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>26</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>27</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>28</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.012</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>29</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.316</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>30</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.804</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>31</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.176</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>32</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.096</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>33</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.812</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>34</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.16</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>35</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.512</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>36</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.808</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>37</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.908</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>38</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.072</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>39</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.316</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>40</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.568</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>41</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.756</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>42</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.868</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>43</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.948</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>44</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.948</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>45</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>5.004</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>46</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>5.048</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>47</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>5.148</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>48</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>5.192</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>49</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.84</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>50</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.876</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>51</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.94</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>52</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.868</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>53</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.872</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>54</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.808</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>55</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.748</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>56</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.592</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>57</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.24</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>58</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.02</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>59</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>4.124</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>60</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.96</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>61</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.728</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>62</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.48</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>63</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.276</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>64</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.104</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>65</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.836</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>66</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.608</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>67</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>2.632</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>68</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>3.108</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>69</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.976</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>70</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.588</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>71</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>1.336</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>72</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.98</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>73</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.832</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>74</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.476</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>75</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.056</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>76</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.04</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>77</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.224</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>78</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.04</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>79</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>80</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>81</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>82</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.216</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>83</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.34</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>84</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.092</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>85</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.004</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>86</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>87</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>88</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>89</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>90</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>91</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>92</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>93</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>94</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>95</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+		<ObservationIntervalBEObservationPeriod>
+			<Sequence>96</Sequence>
+			<ObservationDetailBEEnergyObservation>
+				<EnergyQuantity>0.0</EnergyQuantity>
+				<QuantityQuality listAgencyIdentifier="6">81</QuantityQuality>
+				<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+			</ObservationDetailBEEnergyObservation>
+		</ObservationIntervalBEObservationPeriod>
+	</PayloadBEEnergyTimeSeries>
+</MeterReadContinuous>

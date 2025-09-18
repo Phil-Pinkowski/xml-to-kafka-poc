@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:NotificationofUnsolicitedContractualStatusChange xmlns:rsm="un:unece:260:data:EEM:02-17-NotificationofUnsolicitedContractualStatusChange" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>fc001cc6-9cf2-45c0-8d24-dcba46c5eb00</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="6">407</rsm:DocumentType>
+    <rsm:Creation>2025-06-01T13:07:48.307+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-17.003</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260" listIdentifier="BEL">BG1</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BJ8</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEMPEvent>
+    <rsm:Identification>1cb24bfc-8602-415c-a371-ed21ebef6ec2</rsm:Identification>
+    <rsm:EndOccurrence>2025-05-14T23:00:00.000+01:00</rsm:EndOccurrence>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:ProcessTriggerBETransactionCharacteristic>
+      <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BS8</rsm:EnergyBusinessLabel>
+    </rsm:ProcessTriggerBETransactionCharacteristic>
+    <rsm:RelatedTransactionIdentification>4342fc61-a611-1fe0-8fdb-684b5d74708d</rsm:RelatedTransactionIdentification>
+  </rsm:PayloadBEMPEvent>
+</rsm:NotificationofUnsolicitedContractualStatusChange>

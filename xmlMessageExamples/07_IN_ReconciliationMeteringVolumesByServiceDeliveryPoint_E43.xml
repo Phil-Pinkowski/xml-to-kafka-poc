@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:ReconciliationMeteringVolumesByServiceDeliveryPoint xmlns:rsm="un:unece:260:data:EEM:02-02-ReconciliationMeteringVolumesByServiceDeliveryPoint" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>42da3de9-3138-4466-9734-1d98a1d4636d</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="260">E26</rsm:DocumentType>
+    <rsm:Creation>2025-06-05T14:38:52.456+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-02.003</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260">E43</rsm:EnergyBusinessProcess>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEEnergyTimeSeries>
+    <rsm:Identification>f55e78e8-0a59-4068-90a8-4675763ce41a</rsm:Identification>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:LatestUpdateDate>2025-06-05T14:38:47.623+01:00</rsm:LatestUpdateDate>
+    <rsm:RelatedTransactionIdentification>0a7483a7-d8d4-47e8-a978-d35c05a99cbe</rsm:RelatedTransactionIdentification>
+    <rsm:ObservationPeriodTimeSeriesPeriod>
+      <rsm:Start>2024-10-22T23:00:00.000+01:00</rsm:Start>
+      <rsm:End>2025-05-14T23:00:00.000+01:00</rsm:End>
+    </rsm:ObservationPeriodTimeSeriesPeriod>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:MeteringInstallationUsedMeterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-10-22T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2024-11-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">2.9280000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-11-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2024-12-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">10.0860000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-12-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-01-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">14.0170000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-01-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-02-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">15.7060000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-02-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-03-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">17.0200000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-03-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-03-31T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">12.5460000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-03-31T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-04-30T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">14.3170000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-04-30T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-05-14T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">7.2130000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-10-22T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2024-11-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">2.3980000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-11-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2024-12-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">12.8010000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2024-12-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-01-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">15.9660000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-01-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-02-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">18.5420000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-02-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-03-01T00:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">17.5560000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-03-01T00:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-03-31T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">17.2430000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-03-31T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-04-30T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">17.3420000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+        <rsm:RegisterIntervalRegisterReadPeriod>
+          <rsm:Start>2025-04-30T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-05-14T23:00:00.000+01:00</rsm:End>
+          <rsm:RegisterReconciliationDetailRegisterObservation>
+            <rsm:RegisterQuantity unitCode="KWH">8.2440000000</rsm:RegisterQuantity>
+            <rsm:QuantityQuality listAgencyIdentifier="6">21</rsm:QuantityQuality>
+            <rsm:MeterReadingOriginType listAgencyIdentifier="260" listIdentifier="BEL">BV2</rsm:MeterReadingOriginType>
+          </rsm:RegisterReconciliationDetailRegisterObservation>
+        </rsm:RegisterIntervalRegisterReadPeriod>
+      </rsm:RegisterInstallationBERegisterFacility>
+    </rsm:MeteringInstallationUsedMeterFacility>
+  </rsm:PayloadBEEnergyTimeSeries>
+</rsm:ReconciliationMeteringVolumesByServiceDeliveryPoint>

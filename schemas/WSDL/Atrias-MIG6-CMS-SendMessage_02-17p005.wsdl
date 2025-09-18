@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	WSDL INFORMATION
+	WSDL name: Atrias-MIG6-CMS-SendMessage
+	Version: 02-17.005
+	Issue date: 22/11/2023
+	Issued by: Atrias
+	Description: This WSDL exposes the SendMessage operation from CMS to the Market Parties.
+-->
+<wsdl:definitions 
+	name="Atrias-MIG6-CMS-SendMessage" 
+	targetNamespace="http://www.atrias.be/msg/umig6/02-17/wsdl" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"  
+	xmlns:wsdltns="http://www.atrias.be/msg/umig6/02-17/wsdl" 
+	xmlns:msgtns="http://www.atrias.be/msg/umig6/02-17/SendMessage" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"  
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+		<xsd:schema 
+			targetNamespace="http://www.atrias.be/msg/umig6/02-17/SendMessage" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+			elementFormDefault="qualified">
+			<xsd:include schemaLocation="./Atrias-MIG6-CMS-SendMessage-MsgDefinitions_02-17p005.xsd"/>
+			<xsd:element name="SendMessage" type="msgtns:SendMessageRequest"/>
+			<xsd:element name="SendMessageResponse" type="msgtns:SendMessageResponse"/>
+			<xsd:element name="SoapFaultDoc" type="msgtns:SoapFaultDoc"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="SendMessageSoapFaultDoc">
+		<wsdl:part name="parameters" element="msgtns:SoapFaultDoc">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SendMessageResponse">
+		<wsdl:part name="parameters" element="msgtns:SendMessageResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SendMessageRequest">
+		<wsdl:part name="parameters" element="msgtns:SendMessage">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="SendMessage_PortType">
+		<wsdl:operation name="SendMessage">
+			<wsdl:input message="wsdltns:SendMessageRequest">
+			</wsdl:input>
+			<wsdl:output message="wsdltns:SendMessageResponse">
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc">
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="AtriasMIG6_SendMessage_Binder" type="wsdltns:SendMessage_PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="SendMessage">
+			<soap:operation soapAction="SendMessage" style="document"/>
+			<wsdl:input>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="AtriasMIG6_SendMessage">
+		<wsdl:port name="AtriasMIG6_SendMessage_Port" binding="wsdltns:AtriasMIG6_SendMessage_Binder">
+			<soap:address location="https://server.dummyendpoint:9999/mig6/xx-yy/Atrias-MIG6-CMS-SendMessage"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

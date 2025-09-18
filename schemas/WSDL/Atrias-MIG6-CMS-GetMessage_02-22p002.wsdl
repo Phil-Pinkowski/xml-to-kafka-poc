@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	WSDL INFORMATION
+	WSDL name: Atrias-MIG6-CMS-GetMessage
+	Version: 02-22.002
+	Issue date: 13/01/2025
+	Issued by: Atrias
+	Description: This WSDL exposes the following operations from CMS to the Market Parties:
+		- GetMessage
+		- GetMessageCount
+-->
+<wsdl:definitions 
+name="Atrias-MIG6-CMS-GetMessage" 
+targetNamespace="http://www.atrias.be/msg/umig6/02-22/wsdl" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:wsdltns="http://www.atrias.be/msg/umig6/02-22/wsdl" 
+xmlns:msgtns="http://www.atrias.be/msg/umig6/02-22/GetMessage" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" 
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" >
+	<wsdl:types>
+		<xsd:schema 
+	targetNamespace="http://www.atrias.be/msg/umig6/02-22/GetMessage" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified">
+			<xsd:include schemaLocation="./Atrias-MIG6-CMS-GetMessage-MsgDefinitions_02-22p002.xsd"/>
+			<xsd:element name="GetMessage" type="msgtns:GetMessage"/>
+			<xsd:element name="GetMessageResponse" type="msgtns:GetMessageResponse"/>
+			<xsd:element name="GetMessageCount" type="msgtns:GetMessageCount"/>
+			<xsd:element name="GetMessageCountResponse" type="msgtns:GetMessageCountResponse"/>
+			<xsd:element name="SoapFaultDoc" type="msgtns:SoapFaultDoc"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="GetMessageRequest">
+		<wsdl:part name="getMsgReq" element="msgtns:GetMessage">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetMessageResponse">
+		<wsdl:part name="getMsgRes" element="msgtns:GetMessageResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetMessageCountRequest">
+		<wsdl:part name="getMsgCtReq" element="msgtns:GetMessageCount">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetMessageCountResponse">
+		<wsdl:part name="getMsgCtRes" element="msgtns:GetMessageCountResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="GetMessageSoapFaultDoc">
+		<wsdl:part name="SoapFaultDoc" element="msgtns:SoapFaultDoc">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="GetMessage_PortType">
+		<wsdl:operation name="GetMessage">
+			<wsdl:input message="wsdltns:GetMessageRequest">
+			</wsdl:input>
+			<wsdl:output message="wsdltns:GetMessageResponse">
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:GetMessageSoapFaultDoc">
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetMessageCount">
+			<wsdl:input message="wsdltns:GetMessageCountRequest">
+			</wsdl:input>
+			<wsdl:output message="wsdltns:GetMessageCountResponse">
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:GetMessageSoapFaultDoc">
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="AtriasMIG6_GetMessage_Binder" type="wsdltns:GetMessage_PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetMessageCount">
+			<soap:operation soapAction="GetMessageCount" style="document"/>
+			<wsdl:input>
+				<soap:body parts="getMsgCtReq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="getMsgCtRes" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="GetMessage">
+			<soap:operation soapAction="GetMessage" style="document"/>
+			<wsdl:input>
+				<soap:body parts="getMsgReq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="getMsgRes" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="AtriasMIG6_GetMessage">
+		<wsdl:port name="AtriasMIG6_GetMessage_Port" binding="wsdltns:AtriasMIG6_GetMessage_Binder">
+			<soap:address location="https://server.dummyendpoint:9999/mig6/xx-yy/Atrias-MIG6-CMS-GetMessage"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

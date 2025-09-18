@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cms:RequestStartAccess
+	xmlns:cms="un:unece:260:data:EEM:02-17-RequestStartAccess">
+	<cms:HeaderBEEnergyDocument>
+		<cms:Identification>4342fc61-a611-1fe0-8fdb-684b5d74908d</cms:Identification>
+		<cms:DocumentType listAgencyIdentifier="6">392</cms:DocumentType>
+		<cms:Creation>2025-06-01T12:26:28.185+01:00</cms:Creation>
+		<cms:SenderBEEnergyParty>
+			<cms:Identification schemeAgencyIdentifier="9">5499764353302</cms:Identification>
+		</cms:SenderBEEnergyParty>
+		<cms:RecipientBEEnergyParty>
+			<cms:Identification schemeAgencyIdentifier="9">5414488000806</cms:Identification>
+		</cms:RecipientBEEnergyParty>
+		<cms:IssuerBEEnergyParty>
+			<cms:Identification schemeAgencyIdentifier="9">5499764353302</cms:Identification>
+		</cms:IssuerBEEnergyParty>
+		<cms:AddresseeBEEnergyParty>
+			<cms:Identification schemeAgencyIdentifier="9">5430000544054</cms:Identification>
+		</cms:AddresseeBEEnergyParty>
+		<cms:DocumentStructureRevision>02-17.001</cms:DocumentStructureRevision>
+	</cms:HeaderBEEnergyDocument>
+	<cms:ProcessBEEnergyContext>
+		<cms:EnergyBusinessProcess listIdentifier="BEL" listAgencyIdentifier="260">BG1</cms:EnergyBusinessProcess>
+		<cms:EnergyBusinessLabel listIdentifier="BEL" listAgencyIdentifier="260">BS8</cms:EnergyBusinessLabel>
+		<cms:EnergyIndustryClassification listAgencyIdentifier="6">23</cms:EnergyIndustryClassification>
+	</cms:ProcessBEEnergyContext>
+	<cms:PayloadBEMPEvent>
+		<cms:Identification>4342fc61-a611-1fe0-8fdb-684b5d74708d</cms:Identification>
+		<cms:StartOccurrence>2025-05-14T23:00:00.000+01:00</cms:StartOccurrence>
+		<cms:Function listAgencyIdentifier="6">9</cms:Function>
+		<cms:SDPUsedServiceDeliveryPointLocation>
+			<cms:HeadpointIdentificationDomainLocation>
+				<cms:Identification schemeAgencyIdentifier="9">541448860023500130</cms:Identification>
+			</cms:HeadpointIdentificationDomainLocation>
+			<cms:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</cms:ServiceComponentIdentification>
+		</cms:SDPUsedServiceDeliveryPointLocation>
+		<cms:PODUsedDomainLocation>
+			<cms:Identification schemeAgencyIdentifier="9">541448860023500130</cms:Identification>
+		</cms:PODUsedDomainLocation>
+		<cms:DesynchronizationFlag>false</cms:DesynchronizationFlag>
+		<cms:RequestUnlockFlag>false</cms:RequestUnlockFlag>
+		<cms:TakeOverILCFlag>false</cms:TakeOverILCFlag>
+		<cms:ContestationFlag>false</cms:ContestationFlag>
+		<cms:PreswitchingID>f8b20501-6887-45a8-aa1e-123b35c136d4</cms:PreswitchingID>
+		<cms:ContractAppliedBEContract>
+			<cms:Identification>002210983068</cms:Identification>
+			<cms:Type listIdentifier="BEL" listAgencyIdentifier="260">B12</cms:Type>
+			<cms:Protected>false</cms:Protected>
+			<cms:ContractPartyInvolvedBEContractParty>
+				<cms:Name>Marcoux</cms:Name>
+				<cms:FirstName>Lieselotte</cms:FirstName>
+				<cms:Role listAgencyIdentifier="6">P1</cms:Role>
+				<cms:Role listAgencyIdentifier="6">DEC</cms:Role>
+				<cms:Role listAgencyIdentifier="6">HF</cms:Role>
+				<cms:Role listAgencyIdentifier="6">UD</cms:Role>
+				<cms:Description>Mrs / Mme / Mevr. / Frau</cms:Description>
+				<cms:IsNaturalPersonBranch>true</cms:IsNaturalPersonBranch>
+				<cms:Language listAgencyIdentifier="5">NL</cms:Language>
+				<cms:ContractPartyCommunicationBEContractCommunication>
+					<cms:CompleteNumber>+32470078066</cms:CompleteNumber>
+					<cms:Channel listAgencyIdentifier="6">AL</cms:Channel>
+				</cms:ContractPartyCommunicationBEContractCommunication>
+				<cms:ContractPartyCommunicationBEContractCommunication>
+					<cms:URI>liesmarcoux@gmail.com</cms:URI>
+					<cms:Channel listAgencyIdentifier="6">EM</cms:Channel>
+				</cms:ContractPartyCommunicationBEContractCommunication>
+				<cms:ContractPartyAddressBEContractAddress>
+					<cms:StreetName>GERAARDSBERGSESTEENWEG</cms:StreetName>
+					<cms:BuildingNumber>142 / A</cms:BuildingNumber>
+					<cms:Postcode>9400</cms:Postcode>
+					<cms:CityName>NEDERHASSELT</cms:CityName>
+					<cms:CountryName schemeAgencyIdentifier="5">BE</cms:CountryName>
+				</cms:ContractPartyAddressBEContractAddress>
+			</cms:ContractPartyInvolvedBEContractParty>
+		</cms:ContractAppliedBEContract>
+		<cms:BalanceResponsibleInvolvedBEEnergyParty>
+			<cms:Identification schemeAgencyIdentifier="9">5413012999999</cms:Identification>
+		</cms:BalanceResponsibleInvolvedBEEnergyParty>
+		<cms:ServiceCatalogueOptionServiceComponentCharacteristic>
+			<cms:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+				<cms:ConfigurationIdentification schemeAgencyIdentifier="86">101YM</cms:ConfigurationIdentification>
+			</cms:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+		</cms:ServiceCatalogueOptionServiceComponentCharacteristic>
+		<cms:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+			<cms:UnoccupiedLocationIndicator>false</cms:UnoccupiedLocationIndicator>
+		</cms:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+	</cms:PayloadBEMPEvent>
+</cms:RequestStartAccess>

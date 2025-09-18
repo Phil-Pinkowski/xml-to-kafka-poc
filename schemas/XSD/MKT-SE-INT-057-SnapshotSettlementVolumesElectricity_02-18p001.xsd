@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:se057="http://www.atrias.be/msg/umig/02-18/Settle/SnapshotSettlementVolumesElectricity" targetNamespace="http://www.atrias.be/msg/umig/02-18/Settle/SnapshotSettlementVolumesElectricity" elementFormDefault="qualified" version="02-18.001">
+	<xs:element name="SnapshotSettlementVolumesElectricity" type="se057:SnapshotSettlementVolumesElectricity"/>
+	<xs:complexType name="AllocationSnapshot">
+		<xs:sequence>
+			<xs:element name="Month" type="xs:gYearMonth"/>
+			<xs:element name="AllocationSnapshotSdp" type="se057:AllocationSnapshotSdp" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AllocationSnapshotIexv">
+		<xs:sequence>
+			<xs:element name="Type" type="se057:IexvType_Enum"/>
+			<xs:element name="ValidFromDate" type="se057:UTCOffsetDateTime"/>
+			<xs:element name="ValidToDate" type="se057:UTCOffsetDateTime"/>
+			<xs:element name="Value" type="se057:decimal2010"/>
+			<xs:element name="TimeOfUse" type="se057:TimeOfUse_Enum"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AllocationSnapshotSdp">
+		<xs:sequence>
+			<xs:element name="MarketServiceDeliveryPoint" type="se057:MarketServiceDeliveryPoint"/>
+			<xs:element name="AllocationSnapshotSdpRegister" type="se057:AllocationSnapshotSdpRegister" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AllocationSnapshotSdpRegister">
+		<xs:sequence>
+			<xs:element name="CalculationType" type="se057:CalculationType_Enum" minOccurs="0"/>
+			<xs:element name="Direction" type="se057:Direction_Enum"/>
+			<xs:element name="LoadProfileCode" type="se057:LoadProfileCode_Enum"/>
+			<xs:element name="EnergyType" type="se057:EnergyType_Enum"/>
+			<xs:element name="AllocationSnapshotIexv" type="se057:AllocationSnapshotIexv"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HeaderMessage">
+		<xs:sequence>
+			<xs:element name="MessageId" type="se057:GUID_Type"/>
+			<xs:element name="MessageDateTime" type="se057:UTCOffsetDateTime"/>
+			<xs:element name="Module" type="se057:BusinessReasonCode_Enum"/>
+			<xs:element name="Sector" type="se057:Sector_Enum"/>
+			<xs:element name="SenderId" type="se057:EanGln_Type"/>
+			<xs:element name="ReceiverId" type="se057:EanGln_Type"/>
+			<xs:element name="Version" type="se057:Version_Type"/>
+			<xs:element name="CommonId" type="se057:GUID_Type"/>
+			<xs:element name="Sequence" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HeaderPayload">
+		<xs:sequence>
+			<xs:element name="TransactionId" type="se057:string50"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MarketServiceDeliveryPoint">
+		<xs:sequence>
+			<xs:element name="EanGsrn" type="se057:EanGsrn_Type"/>
+			<xs:element name="ServiceComponentId" type="se057:MarketServiceComponentId_Enum"/>
+			<xs:element name="BalanceSupplierKey" type="se057:EanGsrn_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Payload">
+		<xs:sequence>
+			<xs:element name="HeaderPayload" type="se057:HeaderPayload"/>
+			<xs:element name="AllocationSnapshot" type="se057:AllocationSnapshot"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SnapshotSettlementVolumesElectricity">
+		<xs:sequence>
+			<xs:element name="HeaderMessage" type="se057:HeaderMessage"/>
+			<xs:element name="Payload" type="se057:Payload"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="BusinessReasonCode_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="E44"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CalculationType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BE0"/>
+			<xs:enumeration value="BE1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal2010">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="10"/>
+			<xs:totalDigits value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Direction_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BR3"/>
+			<xs:enumeration value="BR4"/>
+			<xs:enumeration value="E17"/>
+			<xs:enumeration value="E18"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EanGln_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{13}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EanGsrn_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{18}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EnergyType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="8716867000030"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="GUID_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IexvType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="EAV"/>
+			<xs:enumeration value="EMV"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LoadProfileCode_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="S02"/>
+			<xs:enumeration value="S03"/>
+			<xs:enumeration value="S04"/>
+			<xs:enumeration value="S10"/>
+			<xs:enumeration value="S50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MarketServiceComponentId_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SC_COMMINJ"/>
+			<xs:enumeration value="SC_COMMOFF"/>
+			<xs:enumeration value="SC_COMPOFF"/>
+			<xs:enumeration value="SC_COMPOFI"/>
+			<xs:enumeration value="SC_CONPROD"/>
+			<xs:enumeration value="SC_CONSUMP"/>
+			<xs:enumeration value="SC_INJECTI"/>
+			<xs:enumeration value="SC_OFFINJE"/>
+			<xs:enumeration value="SC_OFFTAKE"/>
+			<xs:enumeration value="SC_PRODUCT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Sector_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="23"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string50">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TimeOfUse_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="B36"/>
+			<xs:enumeration value="B37"/>
+			<xs:enumeration value="E10"/>
+			<xs:enumeration value="E11"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UTCOffsetDateTime">
+		<xs:restriction base="xs:dateTime">
+			<xs:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Version_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{2}-[0-9]{2}\.[0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

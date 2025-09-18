@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:ResponseRequestNetUserInteraction xmlns:rsm="un:unece:260:data:EEM:02-17-ResponseRequestNetUserInteraction" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>46a0101f-4c08-4e5e-9470-e766c29593d1</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="260">414</rsm:DocumentType>
+    <rsm:Creation>2025-06-01T12:26:34.775+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-17.004</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260" listIdentifier="BEL">BG1</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BS8</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEMPResponseEvent>
+    <rsm:Identification>94bb3a0a-37aa-47ee-91b2-bde50e6b5ef0</rsm:Identification>
+    <rsm:StartOccurrence>2025-05-14T23:00:00.000+01:00</rsm:StartOccurrence>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:StatusType listAgencyIdentifier="6">39</rsm:StatusType>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:ReferenceTransactionIdentification>4342fc61-a611-1fe0-8fdb-684b5d74708d</rsm:ReferenceTransactionIdentification>
+  </rsm:PayloadBEMPResponseEvent>
+</rsm:ResponseRequestNetUserInteraction>

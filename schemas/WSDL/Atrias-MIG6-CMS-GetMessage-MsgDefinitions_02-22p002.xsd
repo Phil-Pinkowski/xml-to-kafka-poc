@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	XSD INFORMATION
+	XSD name: Atrias-MIG6-CMS-GetMessage-MsgDefinitions
+	Version: 02-22.002
+	Issue date: 13/01/2025
+	Issued by: Atrias
+	Description: This XSD imports the UMIG messages to enable the following operations from the WSDL:
+		- GetMessage
+		- GetMessageCount
+-->
+<xs:schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.atrias.be/msg/umig6/02-22/GetMessage" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:msgtns="http://www.atrias.be/msg/umig6/02-22/GetMessage"
+
+xmlns:rsm20-02-22="un:unece:260:data:EEM:02-22-LightPreswitchInformation"
+
+xmlns:rsm6-02-21="un:unece:260:data:EEM:02-21-AggregatedReconciliationResults"
+
+xmlns:rsm78-02-20="un:unece:260:data:EEM:02-20-MeterReadHistory"
+xmlns:rsm31-02-20="un:unece:260:data:EEM:02-20-NotificationOfAllocationInconsistencyCheck"
+
+xmlns:rsm18-02-18="un:unece:260:data:EEM:02-18-IndividualPublicServiceObligationInvoice"
+
+xmlns:rsm1-02-17="un:unece:260:data:EEM:02-17-FullPreswitchInformation"
+xmlns:rsm26-02-17="un:unece:260:data:EEM:02-17-NotificationCancellationMeterReadRequest"
+xmlns:rsm27-02-17="un:unece:260:data:EEM:02-17-NotificationContestationInitiateLeavingCustomer"
+xmlns:rsm29-02-17="un:unece:260:data:EEM:02-17-NotificationMeterReadingExtension"
+xmlns:rsm32-02-17="un:unece:260:data:EEM:02-17-NotificationofUnsolicitedContractualStatusChange"
+xmlns:rsm36-02-17="un:unece:260:data:EEM:02-17-NotificationRequestStart"
+xmlns:rsm38-02-17="un:unece:260:data:EEM:02-17-NotificationTicketProcessing"
+xmlns:rsm39-02-17="un:unece:260:data:EEM:02-17-NotificationUnsolicitedWin"
+xmlns:rsm55-02-17="un:unece:260:data:EEM:02-17-RequestApprovalRectification"
+xmlns:rsm56-02-17="un:unece:260:data:EEM:02-17-RequestRectification"
+xmlns:rsm61-02-17="un:unece:260:data:EEM:02-17-ResponseRequestNetUserInteraction"
+xmlns:rsm67-02-17="un:unece:260:data:EEM:02-17-TechnicalMasterData"
+xmlns:rsm69-02-17="un:unece:260:data:EEM:02-17-UpdateTechnicalMasterData"
+
+xmlns:rsm74-02-16="un:unece:260:data:EEM:02-16-AggregatedMeteredDataForBillingContinuous"
+xmlns:rsm75-02-16="un:unece:260:data:EEM:02-16-AggregatedMeteredDataForVerificationContinuous"
+xmlns:rsm17-02-16="un:unece:260:data:EEM:02-16-IndividualGridfeeInvoice"
+xmlns:rsm77-02-16="un:unece:260:data:EEM:02-16-MeterReadForInformation"
+xmlns:rsm25-02-16="un:unece:260:data:EEM:02-16-MeterReadNonContinuousForBilling"
+
+xmlns:rsm12-02-12="un:unece:260:data:EEM:02-12-BasicPreswitchInformation"
+
+xmlns:rsm1-02-06="un:unece:260:data:EEM:02-06-AggregatedGridfeeInvoice"
+xmlns:rsm3-02-06="un:unece:260:data:EEM:02-06-AggregatedPrepaymentGridfeeInvoice"
+xmlns:rsm4-02-06="un:unece:260:data:EEM:02-06-AggregatedPrepaymentPublicServiceObligationInvoice"
+xmlns:rsm5-02-06="un:unece:260:data:EEM:02-06-AggregatedPublicServiceObligationInvoice"
+xmlns:rsm7-02-06="un:unece:260:data:EEM:02-06-AggregatedTransactionCostInvoicingInvoice"
+xmlns:rsm19-02-06="un:unece:260:data:EEM:02-06-IndividualTransactionCostInvoicingInvoice"
+xmlns:rsm51-02-06="un:unece:260:data:EEM:02-06-ReferencePrepaymentGridfeeDataByServiceDeliveryPoint"
+xmlns:rsm52-02-06="un:unece:260:data:EEM:02-06-ReferencePrepaymentPublicServiceObligationDataByServiceDeliveryPoint"
+
+xmlns:rsm11-02-05="un:unece:260:data:EEM:02-05-AllocationResultsForSupplier"
+xmlns:rsm22-02-05="un:unece:260:data:EEM:02-05-MeterReadBeginIndex"
+xmlns:rsm41-02-05="un:unece:260:data:EEM:02-05-PortfolioForCapacityAllocationForBalanceResponsibleParty"
+xmlns:rsm58-02-05="un:unece:260:data:EEM:02-05-ResponseRequestCancellationOfMeterRead"
+
+xmlns:rsm9-02-04="un:unece:260:data:EEM:02-04-AllocationResultsForBalanceResponsibleParty"
+xmlns:rsm40-02-04="un:unece:260:data:EEM:02-04-PortfolioForBalanceResponsibleParty"
+xmlns:rsm44-02-04="un:unece:260:data:EEM:02-04-ProvisionalAllocationForBRP"
+
+xmlns:rsm2-02-03="un:unece:260:data:EEM:02-03-NotificationNoRunAllocation"
+xmlns:rsm3-02-03="un:unece:260:data:EEM:02-03-RerunNotificationSettlement"
+
+xmlns:rsm2-02-02="un:unece:260:data:EEM:02-02-AggregatedPeriodicMeterReadContinuous"
+xmlns:rsm14-02-02="un:unece:260:data:EEM:02-02-EstimatedVolumeHistory"
+xmlns:rsm71-02-02="un:unece:260:data:EEM:02-02-MeterReadContinuous"
+xmlns:rsm28-02-02="un:unece:260:data:EEM:02-02-NotificationLabelChange"
+xmlns:rsm30-02-02="un:unece:260:data:EEM:02-02-NotificationOfActivationOfServiceComponent"
+xmlns:rsm37-02-02="un:unece:260:data:EEM:02-02-NotificationRerunReconciliationOfCompensation"
+xmlns:rsm47-02-02="un:unece:260:data:EEM:02-02-ReconciliationMeteringVolumesByServiceDeliveryPoint"
+xmlns:rsm48-02-02="un:unece:260:data:EEM:02-02-ReconciliationOfCompensationShare"
+xmlns:rsm49-02-02="un:unece:260:data:EEM:02-02-ReconciliationOfCompensationVolume"
+xmlns:rsm53-02-02="un:unece:260:data:EEM:02-02-RejectionResponseApproval"
+xmlns:rsm54-02-02="un:unece:260:data:EEM:02-02-RequestApprovalOfCancellation"
+xmlns:rsm57-02-02="un:unece:260:data:EEM:02-02-ResponseCancellationOfModule"
+xmlns:rsm60-02-02="un:unece:260:data:EEM:02-02-ResponseRequestMeterRead"
+xmlns:rsm62-02-02="un:unece:260:data:EEM:02-02-ResponseRequestPreswitchingData"
+xmlns:rsm63-02-02="un:unece:260:data:EEM:02-02-ResponseRequestRectification"
+xmlns:rsm66-02-02="un:unece:260:data:EEM:02-02-StartAccessMissing"
+
+elementFormDefault="qualified">
+
+<!-- IMPORTS -->
+	<!-- Major version 02-22 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-22-LightPreswitchInformation" schemaLocation="../XSD/LightPreswitchInformation_02-22p002.xsd"/>
+	<!-- Major version 02-21 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-21-AggregatedReconciliationResults" schemaLocation="../XSD/AggregatedReconciliationResults_02-21p001.xsd"/>
+	<!-- Major version 02-20 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-20-MeterReadHistory" schemaLocation="../XSD/MeterReadHistory_02-20p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-20-NotificationOfAllocationInconsistencyCheck" schemaLocation="../XSD/NotificationOfAllocationInconsistencyCheck_02-20p001.xsd"/>
+	<!-- Major version 02-18 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-18-IndividualPublicServiceObligationInvoice" schemaLocation="../XSD/IndividualPublicServiceObligationInvoice_02-18p001.xsd"/>
+	<!-- Major version 02-17 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-17-FullPreswitchInformation" schemaLocation="../XSD/FullPreswitchInformation_02-17p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationCancellationMeterReadRequest" schemaLocation="../XSD/NotificationCancellationMeterReadRequest_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationContestationInitiateLeavingCustomer" schemaLocation="../XSD/NotificationContestationInitiateLeavingCustomer_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationMeterReadingExtension" schemaLocation="../XSD/NotificationMeterReadingExtension_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationofUnsolicitedContractualStatusChange" schemaLocation="../XSD/NotificationofUnsolicitedContractualStatusChange_02-17p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationRequestStart" schemaLocation="../XSD/NotificationRequestStart_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationTicketProcessing" schemaLocation="../XSD/NotificationTicketProcessing_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-NotificationUnsolicitedWin" schemaLocation="../XSD/NotificationUnsolicitedWin_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestApprovalRectification" schemaLocation="../XSD/RequestApprovalRectification_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-RequestRectification" schemaLocation="../XSD/RequestRectification_02-17p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-ResponseRequestNetUserInteraction" schemaLocation="../XSD/ResponseRequestNetUserInteraction_02-17p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-TechnicalMasterData" schemaLocation="../XSD/TechnicalMasterData_02-17p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-17-UpdateTechnicalMasterData" schemaLocation="../XSD/UpdateTechnicalMasterData_02-17p003.xsd"/>
+	<!-- Major version 02-16 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-16-AggregatedMeteredDataForBillingContinuous" schemaLocation="../XSD/AggregatedMeteredDataForBillingContinuous_02-16p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-16-AggregatedMeteredDataForVerificationContinuous" schemaLocation="../XSD/AggregatedMeteredDataForVerificationContinuous_02-16p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-16-IndividualGridfeeInvoice" schemaLocation="../XSD/IndividualGridfeeInvoice_02-16p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-16-MeterReadForInformation" schemaLocation="../XSD/MeterReadForInformation_02-16p001.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-16-MeterReadNonContinuousForBilling" schemaLocation="../XSD/MeterReadNonContinuousForBilling_02-16p001.xsd"/>
+	<!-- Major version 02-12 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-12-BasicPreswitchInformation" schemaLocation="../XSD/BasicPreswitchInformation_02-12p002.xsd"/>
+	<!-- Major version 02-06 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-06-AggregatedGridfeeInvoice" schemaLocation="../XSD/AggregatedGridfeeInvoice_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-AggregatedPrepaymentGridfeeInvoice" schemaLocation="../XSD/AggregatedPrepaymentGridfeeInvoice_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-AggregatedPrepaymentPublicServiceObligationInvoice" schemaLocation="../XSD/AggregatedPrepaymentPublicServiceObligationInvoice_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-AggregatedPublicServiceObligationInvoice" schemaLocation="../XSD/AggregatedPublicServiceObligationInvoice_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-AggregatedTransactionCostInvoicingInvoice" schemaLocation="../XSD/AggregatedTransactionCostInvoicingInvoice_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-IndividualTransactionCostInvoicingInvoice" schemaLocation="../XSD/IndividualTransactionCostInvoicingInvoice_02-06p002.xsd"/>	
+		<xs:import namespace="un:unece:260:data:EEM:02-06-ReferencePrepaymentGridfeeDataByServiceDeliveryPoint" schemaLocation="../XSD/ReferencePrepaymentGridfeeDataByServiceDeliveryPoint_02-06p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-06-ReferencePrepaymentPublicServiceObligationDataByServiceDeliveryPoint" schemaLocation="../XSD/ReferencePrepaymentPublicServiceObligationDataByServiceDeliveryPoint_02-06p002.xsd"/>
+	<!-- Major version 02-05 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-05-AllocationResultsForSupplier" schemaLocation="../XSD/AllocationResultsForSupplier_02-05p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-05-MeterReadBeginIndex" schemaLocation="../XSD/MeterReadBeginIndex_02-05p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-05-PortfolioForCapacityAllocationForBalanceResponsibleParty" schemaLocation="../XSD/PortfolioForCapacityAllocationForBalanceResponsibleParty_02-05p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-05-ResponseRequestCancellationOfMeterRead" schemaLocation="../XSD/ResponseRequestCancellationOfMeterRead_02-05p003.xsd"/>
+	<!-- Major version 02-04 -->	
+		<xs:import namespace="un:unece:260:data:EEM:02-04-AllocationResultsForBalanceResponsibleParty" schemaLocation="../XSD/AllocationResultsForBalanceResponsibleParty_02-04p003.xsd"/>		
+		<xs:import namespace="un:unece:260:data:EEM:02-04-PortfolioForBalanceResponsibleParty" schemaLocation="../XSD/PortfolioForBalanceResponsibleParty_02-04p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-04-ProvisionalAllocationForBRP" schemaLocation="../XSD/ProvisionalAllocationForBRP_02-04p003.xsd"/>
+	<!-- Major version 02-03 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-03-NotificationNoRunAllocation" schemaLocation="../XSD/NotificationNoRunAllocation_02-03p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-03-RerunNotificationSettlement" schemaLocation="../XSD/RerunNotificationSettlement_02-03p003.xsd"/>
+	<!-- Major version 02-02 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-02-AggregatedPeriodicMeterReadContinuous" schemaLocation="../XSD/AggregatedPeriodicMeterReadContinuous_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-EstimatedVolumeHistory" schemaLocation="../XSD/EstimatedVolumeHistory_02-02p005.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-MeterReadContinuous" schemaLocation="../XSD/MeterReadContinuous_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-NotificationLabelChange" schemaLocation="../XSD/NotificationLabelChange_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-NotificationOfActivationOfServiceComponent" schemaLocation="../XSD/NotificationOfActivationOfServiceComponent_02-02p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-NotificationRerunReconciliationOfCompensation" schemaLocation="../XSD/NotificationRerunReconciliationOfCompensation_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ReconciliationMeteringVolumesByServiceDeliveryPoint" schemaLocation="../XSD/ReconciliationMeteringVolumesByServiceDeliveryPoint_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ReconciliationOfCompensationShare" schemaLocation="../XSD/ReconciliationOfCompensationShare_02-02p002.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ReconciliationOfCompensationVolume" schemaLocation="../XSD/ReconciliationOfCompensationVolume_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RejectionResponseApproval" schemaLocation="../XSD/RejectionResponseApproval_02-02p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-RequestApprovalOfCancellation" schemaLocation="../XSD/RequestApprovalOfCancellation_02-02p003.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ResponseCancellationOfModule" schemaLocation="../XSD/ResponseCancellationOfModule_02-02p005.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ResponseRequestMeterRead" schemaLocation="../XSD/ResponseRequestMeterRead_02-02p004.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ResponseRequestPreswitchingData" schemaLocation="../XSD/ResponseRequestPreswitchingData_02-02p005.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-ResponseRequestRectification" schemaLocation="../XSD/ResponseRequestRectification_02-02p008.xsd"/>
+		<xs:import namespace="un:unece:260:data:EEM:02-02-StartAccessMissing" schemaLocation="../XSD/StartAccessMissing_02-02p002.xsd"/>
+	
+<!-- SIMPLE TYPES -->
+	<xs:simpleType name="MessageId">
+		<xs:restriction base="xs:string">
+			<xs:pattern
+				value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}">
+			</xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Queue">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Bill"/>
+			<xs:enumeration value="BillCritical"/>
+			<xs:enumeration value="Measure"/>
+			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Settle"/>
+			<xs:enumeration value="SettleCritical"/>
+			<xs:enumeration value="Timeseries"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="DocumentType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
+<!-- COMPLEX TYPES -->
+	<xs:complexType name="GetMessage">
+		<xs:sequence>
+			<xs:element name="MessageId" type="msgtns:MessageId"/>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageResponse">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+			<xs:element name="MessageId" type="msgtns:MessageId"/>
+			<xs:element minOccurs="0" name="DocumentType" type="msgtns:DocumentType"/>
+			<xs:element minOccurs="0" name="Payload" type="msgtns:Payload"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageCount">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageCountResponse">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+			<xs:element name="Count" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SoapFaultDoc">
+		<xs:sequence>
+			<xs:element name="faultCode" type="xs:string"/>
+			<xs:element name="faultMessage" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Payload">
+		<xs:choice>
+			<!-- Major version 02-22 messages -->
+				<xs:element ref="rsm20-02-22:LightPreswitchInformation"/>
+			<!-- Major version 02-21 messages -->
+				<xs:element ref="rsm6-02-21:AggregatedReconciliationResults"/>
+			<!-- Major version 02-20 messages -->
+				<xs:element ref="rsm78-02-20:MeterReadHistory"/>
+				<xs:element ref="rsm31-02-20:NotificationOfAllocationInconsistencyCheck"/>
+			<!-- Major version 02-18 messages -->
+				<xs:element ref="rsm18-02-18:IndividualPublicServiceObligationInvoice"/>
+			<!-- Major version 02-17 messages -->
+				<xs:element ref="rsm1-02-17:FullPreswitchInformation"/>
+				<xs:element ref="rsm26-02-17:NotificationCancellationMeterReadRequest"/>
+				<xs:element ref="rsm27-02-17:NotificationContestationInitiateLeavingCustomer"/>
+				<xs:element ref="rsm29-02-17:NotificationMeterReadingExtension"/>
+				<xs:element ref="rsm32-02-17:NotificationofUnsolicitedContractualStatusChange"/>
+				<xs:element ref="rsm36-02-17:NotificationRequestStart"/>
+				<xs:element ref="rsm38-02-17:NotificationTicketProcessing"/>
+				<xs:element ref="rsm39-02-17:NotificationUnsolicitedWin"/>
+				<xs:element ref="rsm55-02-17:RequestApprovalRectification"/>
+				<xs:element ref="rsm56-02-17:RequestRectification"/>
+				<xs:element ref="rsm61-02-17:ResponseRequestNetUserInteraction"/>
+				<xs:element ref="rsm67-02-17:TechnicalMasterData"/>
+				<xs:element ref="rsm69-02-17:UpdateTechnicalMasterData"/>
+			<!-- Major version 02-16 messages -->
+				<xs:element ref="rsm74-02-16:AggregatedMeteredDataForBillingContinuous"/>
+				<xs:element ref="rsm75-02-16:AggregatedMeteredDataForVerificationContinuous"/>
+				<xs:element ref="rsm17-02-16:IndividualGridfeeInvoice"/>
+				<xs:element ref="rsm77-02-16:MeterReadForInformation"/>
+				<xs:element ref="rsm25-02-16:MeterReadNonContinuousForBilling"/>
+			<!-- Major version 02-12 messages -->
+				<xs:element ref="rsm12-02-12:BasicPreswitchInformation"/>
+			<!-- Major version 02-06 messages -->
+				<xs:element ref="rsm1-02-06:AggregatedGridfeeInvoice"/>
+				<xs:element ref="rsm3-02-06:AggregatedPrepaymentGridfeeInvoice"/>
+				<xs:element ref="rsm4-02-06:AggregatedPrepaymentPublicServiceObligationInvoice"/>
+				<xs:element ref="rsm5-02-06:AggregatedPublicServiceObligationInvoice"/>
+				<xs:element ref="rsm7-02-06:AggregatedTransactionCostInvoicingInvoice"/>
+				<xs:element ref="rsm19-02-06:IndividualTransactionCostInvoicingInvoice"/>
+				<xs:element ref="rsm51-02-06:ReferencePrepaymentGridfeeDataByServiceDeliveryPoint"/>
+				<xs:element ref="rsm52-02-06:ReferencePrepaymentPublicServiceObligationDataByServiceDeliveryPoint"/>
+			<!-- Major version 02-05 messages -->
+				<xs:element ref="rsm11-02-05:AllocationResultsForSupplier"/>
+				<xs:element ref="rsm22-02-05:MeterReadBeginIndex"/>
+				<xs:element ref="rsm41-02-05:PortfolioForCapacityAllocationForBalanceResponsibleParty"/>
+				<xs:element ref="rsm58-02-05:ResponseRequestCancellationOfMeterRead"/>
+			<!-- Major version 02-04 messages -->
+				<xs:element ref="rsm9-02-04:AllocationResultsForBalanceResponsibleParty"/>
+				<xs:element ref="rsm40-02-04:PortfolioForBalanceResponsibleParty"/>
+				<xs:element ref="rsm44-02-04:ProvisionalAllocationForBRP"/>
+			<!-- Major version 02-03 messages -->
+				<xs:element ref="rsm2-02-03:NotificationNoRunAllocation"/>
+				<xs:element ref="rsm3-02-03:RerunNotificationSettlement"/>
+			<!-- Major version 02-02 messages -->
+				<xs:element ref="rsm2-02-02:AggregatedPeriodicMeterReadContinuous"/>
+				<xs:element ref="rsm14-02-02:EstimatedVolumeHistory"/>
+				<xs:element ref="rsm71-02-02:MeterReadContinuous"/>
+				<xs:element ref="rsm28-02-02:NotificationLabelChange"/>
+				<xs:element ref="rsm30-02-02:NotificationOfActivationOfServiceComponent"/>			
+				<xs:element ref="rsm37-02-02:NotificationRerunReconciliationOfCompensation"/>
+				<xs:element ref="rsm47-02-02:ReconciliationMeteringVolumesByServiceDeliveryPoint"/>
+				<xs:element ref="rsm48-02-02:ReconciliationOfCompensationShare"/>
+				<xs:element ref="rsm49-02-02:ReconciliationOfCompensationVolume"/>
+				<xs:element ref="rsm53-02-02:RejectionResponseApproval"/>
+				<xs:element ref="rsm54-02-02:RequestApprovalOfCancellation"/>
+				<xs:element ref="rsm57-02-02:ResponseCancellationOfModule"/>			
+				<xs:element ref="rsm60-02-02:ResponseRequestMeterRead"/>
+				<xs:element ref="rsm62-02-02:ResponseRequestPreswitchingData"/>
+				<xs:element ref="rsm63-02-02:ResponseRequestRectification"/>			
+				<xs:element ref="rsm66-02-02:StartAccessMissing"/>
+		</xs:choice>
+	</xs:complexType>
+	
+</xs:schema>

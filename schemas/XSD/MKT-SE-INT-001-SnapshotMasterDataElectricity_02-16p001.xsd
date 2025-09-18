@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:se001="http://www.atrias.be/msg/umig/02-16/Settle/SnapshotMasterDataElectricity" targetNamespace="http://www.atrias.be/msg/umig/02-16/Settle/SnapshotMasterDataElectricity" elementFormDefault="qualified" version="02-16.001">
+	<xs:element name="SnapshotMasterDataElectricity" type="se001:SnapshotMasterDataElectricity"/>
+	<xs:complexType name="AllocationSnapshot">
+		<xs:sequence>
+			<xs:element name="Month" type="xs:gYearMonth"/>
+			<xs:element name="AllocationSnapshotSdp" type="se001:AllocationSnapshotSdp" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AllocationSnapshotSdp">
+		<xs:sequence>
+			<xs:element name="MarketServiceDeliveryPoint" type="se001:MarketServiceDeliveryPoint"/>
+			<xs:element name="InternalMarketSdpConfiguration" type="se001:InternalMarketSdpConfiguration"/>
+			<xs:element name="ExternalMarketSdpConfiguration" type="se001:ExternalMarketSdpConfiguration" minOccurs="0"/>
+			<xs:element name="LocalProductionInstallation" type="se001:LocalProductionInstallation" minOccurs="0"/>
+			<xs:element name="AllocationSnapshotSdpRegister" type="se001:AllocationSnapshotSdpRegister" maxOccurs="unbounded"/>
+			<xs:element name="GridAccessProvider" type="se001:GridAccessProvider"/>
+			<xs:element name="BalanceResponsible" type="se001:BalanceResponsible"/>
+			<xs:element name="BalanceSupplier" type="se001:BalanceSupplier"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="AllocationSnapshotSdpRegister">
+		<xs:sequence>
+			<xs:element name="CalculationType" type="se001:CalculationType_Enum" minOccurs="0"/>
+			<xs:element name="Direction" type="se001:Direction_Enum"/>
+			<xs:element name="LoadProfileCode" type="se001:LoadProfileCode_Enum"/>
+			<xs:element name="TimeOfUse" type="se001:TimeOfUse_Enum"/>
+			<xs:element name="EnergyType" type="se001:EnergyType_Enum"/>
+			<xs:element name="MeteringMethod" type="se001:MeteringMethod_Enum"/>
+			<xs:element name="Unit" type="se001:RegisterUnit_Enum"/>
+			<xs:element name="VirtualBaseFlag" type="se001:booleanTF" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BalanceResponsible">
+		<xs:sequence>
+			<xs:element name="EanGln" type="se001:EanGln_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BalanceSupplier">
+		<xs:sequence>
+			<xs:element name="EanGln" type="se001:EanGln_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExternalMarketSdpConfiguration">
+		<xs:sequence>
+			<xs:element name="MeteringRegime" type="se001:MeteringRegime_Enum" minOccurs="0"/>
+			<xs:element name="InformationFrequency" type="se001:InformationFrequency_Enum" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GridAccessProvider">
+		<xs:sequence>
+			<xs:element name="EanGln" type="se001:EanGln_Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HeaderMessage">
+		<xs:sequence>
+			<xs:element name="MessageId" type="se001:GUID_Type"/>
+			<xs:element name="MessageDateTime" type="se001:UTCOffsetDateTime"/>
+			<xs:element name="Module" type="se001:BusinessReasonCode_Enum"/>
+			<xs:element name="Sector" type="se001:Sector_Enum"/>
+			<xs:element name="SenderId" type="se001:EanGln_Type"/>
+			<xs:element name="ReceiverId" type="se001:EanGln_Type"/>
+			<xs:element name="Version" type="se001:Version_Type"/>
+			<xs:element name="CommonId" type="se001:GUID_Type"/>
+			<xs:element name="Sequence" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HeaderPayload">
+		<xs:sequence>
+			<xs:element name="TransactionId" type="se001:string50"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InternalMarketSdpConfiguration">
+		<xs:sequence>
+			<xs:element name="DgoBillFrequency" type="se001:DgoBillFrequency_Enum"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocalProductionInstallation">
+		<xs:sequence>
+			<xs:element name="Type" type="se001:LocalProductionInstallationType_Enum"/>
+			<xs:element name="InstalledPower" type="se001:decimal2010" minOccurs="0"/>
+			<xs:element name="InstalledPowerUnit" type="se001:LocalProductionInstalledPowerUnit_Enum" minOccurs="0"/>
+			<xs:element name="ConverterPower" type="se001:decimal2010" minOccurs="0"/>
+			<xs:element name="ConverterPowerUnit" type="se001:ConverterPowerUnit_Enum" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MarketServiceDeliveryPoint">
+		<xs:sequence>
+			<xs:element name="EanGsrn" type="se001:EanGsrn_Type"/>
+			<xs:element name="ServiceComponentId" type="se001:MarketServiceComponentId_Enum"/>
+			<xs:element name="BalanceSupplierKey" type="se001:EanGsrn_Type"/>
+			<xs:element name="SettlementMethod" type="se001:SettlementMethod_Enum"/>
+			<xs:element name="UnoccupiedLocationFlag" type="se001:booleanTF"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Payload">
+		<xs:sequence>
+			<xs:element name="HeaderPayload" type="se001:HeaderPayload"/>
+			<xs:element name="AllocationSnapshot" type="se001:AllocationSnapshot"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SnapshotMasterDataElectricity">
+		<xs:sequence>
+			<xs:element name="HeaderMessage" type="se001:HeaderMessage"/>
+			<xs:element name="Payload" type="se001:Payload"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="booleanTF">
+		<xs:restriction base="xs:boolean">
+			<xs:pattern value="true|false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BusinessReasonCode_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="E44"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CalculationType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BE0"/>
+			<xs:enumeration value="BE1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ConverterPowerUnit_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="KWT"/>
+			<xs:enumeration value="KVA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="decimal2010">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="10"/>
+			<xs:totalDigits value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DgoBillFrequency_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="P1M"/>
+			<xs:enumeration value="P1Y"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Direction_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BR3"/>
+			<xs:enumeration value="BR4"/>
+			<xs:enumeration value="E17"/>
+			<xs:enumeration value="E18"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EanGln_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{13}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EanGsrn_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{18}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EnergyType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="8716867000030"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="GUID_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="InformationFrequency_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="P1M"/>
+			<xs:enumeration value="P6M"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LoadProfileCode_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="S02"/>
+			<xs:enumeration value="S03"/>
+			<xs:enumeration value="S04"/>
+			<xs:enumeration value="S10"/>
+			<xs:enumeration value="S50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LocalProductionInstallationType_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="T010000"/>
+			<xs:enumeration value="T010100"/>
+			<xs:enumeration value="T010101"/>
+			<xs:enumeration value="T010102"/>
+			<xs:enumeration value="T010200"/>
+			<xs:enumeration value="T020000"/>
+			<xs:enumeration value="T020001"/>
+			<xs:enumeration value="T020002"/>
+			<xs:enumeration value="T030000"/>
+			<xs:enumeration value="T030100"/>
+			<xs:enumeration value="T030200"/>
+			<xs:enumeration value="T030300"/>
+			<xs:enumeration value="T030400"/>
+			<xs:enumeration value="T040000"/>
+			<xs:enumeration value="T040100"/>
+			<xs:enumeration value="T040101"/>
+			<xs:enumeration value="T040102"/>
+			<xs:enumeration value="T040200"/>
+			<xs:enumeration value="T040201"/>
+			<xs:enumeration value="T040202"/>
+			<xs:enumeration value="T040300"/>
+			<xs:enumeration value="T040400"/>
+			<xs:enumeration value="T050000"/>
+			<xs:enumeration value="T050100"/>
+			<xs:enumeration value="T050101"/>
+			<xs:enumeration value="T050102"/>
+			<xs:enumeration value="T050200"/>
+			<xs:enumeration value="T050201"/>
+			<xs:enumeration value="T050202"/>
+			<xs:enumeration value="T050300"/>
+			<xs:enumeration value="T050301"/>
+			<xs:enumeration value="T050302"/>
+			<xs:enumeration value="T050400"/>
+			<xs:enumeration value="T050401"/>
+			<xs:enumeration value="T050402"/>
+			<xs:enumeration value="T050500"/>
+			<xs:enumeration value="T050501"/>
+			<xs:enumeration value="T050502"/>
+			<xs:enumeration value="T050600"/>
+			<xs:enumeration value="T050601"/>
+			<xs:enumeration value="T050602"/>
+			<xs:enumeration value="T050700"/>
+			<xs:enumeration value="T050701"/>
+			<xs:enumeration value="T050702"/>
+			<xs:enumeration value="T050800"/>
+			<xs:enumeration value="T050801"/>
+			<xs:enumeration value="T050802"/>
+			<xs:enumeration value="T050900"/>
+			<xs:enumeration value="T050901"/>
+			<xs:enumeration value="T050902"/>
+			<xs:enumeration value="T051000"/>
+			<xs:enumeration value="T051001"/>
+			<xs:enumeration value="T051002"/>
+			<xs:enumeration value="T060000"/>
+			<xs:enumeration value="T060100"/>
+			<xs:enumeration value="T060200"/>
+			<xs:enumeration value="T060300"/>
+			<xs:enumeration value="T060400"/>
+			<xs:enumeration value="T070000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="LocalProductionInstalledPowerUnit_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="KWT"/>
+			<xs:enumeration value="KVA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MarketServiceComponentId_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SC_COMMINJ"/>
+			<xs:enumeration value="SC_COMMOFF"/>
+			<xs:enumeration value="SC_COMPOFF"/>
+			<xs:enumeration value="SC_COMPOFI"/>
+			<xs:enumeration value="SC_CONPROD"/>
+			<xs:enumeration value="SC_CONSUMP"/>
+			<xs:enumeration value="SC_INJECTI"/>
+			<xs:enumeration value="SC_OFFINJE"/>
+			<xs:enumeration value="SC_OFFTAKE"/>
+			<xs:enumeration value="SC_PRODUCT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MeteringMethod_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="E13"/>
+			<xs:enumeration value="E14"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MeteringRegime_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="R1"/>
+			<xs:enumeration value="R3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RegisterUnit_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="KWH"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Sector_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="23"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SettlementMethod_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BU7"/>
+			<xs:enumeration value="BU8"/>
+			<xs:enumeration value="BU9"/>
+			<xs:enumeration value="E01"/>
+			<xs:enumeration value="E02"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="string50">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TimeOfUse_Enum">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="B36"/>
+			<xs:enumeration value="B37"/>
+			<xs:enumeration value="E10"/>
+			<xs:enumeration value="E11"/>
+			<xs:enumeration value="E12"/>
+			<xs:enumeration value="PKH"/>
+			<xs:enumeration value="PKL"/>
+			<xs:enumeration value="NPK"/>
+			<xs:enumeration value="NPH"/>
+			<xs:enumeration value="NPL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UTCOffsetDateTime">
+		<xs:restriction base="xs:dateTime">
+			<xs:pattern value="[0-9]{4}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})?\+01:00"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Version_Type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{2}-[0-9]{2}\.[0-9]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

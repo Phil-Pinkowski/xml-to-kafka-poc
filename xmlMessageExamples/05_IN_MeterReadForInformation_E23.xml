@@ -1,0 +1,172 @@
+<MeterReadForInformation
+	xmlns="un:unece:260:data:EEM:02-16-MeterReadForInformation">
+	<HeaderBEEnergyDocument>
+		<Identification>8229c646-2760-11f0-9fc4-fe6a1ff60600</Identification>
+		<DocumentType listAgencyIdentifier="260">E11</DocumentType>
+		<Creation>2025-05-04T18:37:36.452+01:00</Creation>
+		<SenderBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5414488001902</Identification>
+		</SenderBEEnergyParty>
+		<RecipientBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5499764353302</Identification>
+		</RecipientBEEnergyParty>
+		<IssuerBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5430000544054</Identification>
+		</IssuerBEEnergyParty>
+		<AddresseeBEEnergyParty>
+			<Identification schemeAgencyIdentifier="9">5499764353302</Identification>
+		</AddresseeBEEnergyParty>
+		<DocumentStructureRevision>02-16.001</DocumentStructureRevision>
+	</HeaderBEEnergyDocument>
+	<ProcessBEEnergyContext>
+		<EnergyBusinessProcess listIdentifier="BEL" listAgencyIdentifier="260">E23</EnergyBusinessProcess>
+		<EnergyIndustryClassification listAgencyIdentifier="6">23</EnergyIndustryClassification>
+	</ProcessBEEnergyContext>
+	<PayloadBEEnergyTimeSeries>
+		<Identification>8229c646-2760-11f0-9ec4-fe6a1ff60600</Identification>
+		<Function listAgencyIdentifier="6">9</Function>
+		<ObservationPeriodTimeSeriesPeriod>
+			<Start>2025-03-31T23:00:00.000+01:00</Start>
+			<End>2025-04-30T23:00:00.000+01:00</End>
+		</ObservationPeriodTimeSeriesPeriod>
+		<SDPUsedServiceDeliveryPointLocation>
+			<HeadpointIdentificationDomainLocation>
+				<Identification schemeAgencyIdentifier="89">541448860008107873</Identification>
+			</HeadpointIdentificationDomainLocation>
+			<ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</ServiceComponentIdentification>
+		</SDPUsedServiceDeliveryPointLocation>
+		<PODUsedDomainLocation>
+			<Identification schemeAgencyIdentifier="89">541448860008107873</Identification>
+		</PODUsedDomainLocation>
+		<MeteringInstallationUsedMeterFacility>
+			<MeterIdentification>541448860008107873</MeterIdentification>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>E10BCYKWH</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterPeriodQuantityDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">191.674</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterPeriodQuantityDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>E11BCYKWH</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterPeriodQuantityDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">546.688</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterPeriodQuantityDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>E10B31KWH</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterPeriodQuantityDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">194.699</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterPeriodQuantityDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>E11B31KWH</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterPeriodQuantityDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">74.985</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterPeriodQuantityDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+		</MeteringInstallationUsedMeterFacility>
+		<MeteringInstallationUsedMeterFacility>
+			<MeterIdentification>1SAG3100009433</MeterIdentification>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>1/1.8.1</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<RegisterBeginIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">21527</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterBeginIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+				<RegisterIntervalRegisterReadPeriod>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterEndIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">21602.043</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterEndIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>2/1.8.2</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<RegisterBeginIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">27961</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterBeginIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+				<RegisterIntervalRegisterReadPeriod>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterEndIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">28156.039</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterEndIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>3/2.8.1</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<RegisterBeginIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">5903</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterBeginIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+				<RegisterIntervalRegisterReadPeriod>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterEndIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">6450.033</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterEndIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+			<RegisterInstallationBERegisterFacility>
+				<RegisterIdentification>4/2.8.2</RegisterIdentification>
+				<RegisterIntervalRegisterReadPeriod>
+					<Start>2025-03-31T23:00:00.000+01:00</Start>
+					<RegisterBeginIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">2172</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterBeginIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+				<RegisterIntervalRegisterReadPeriod>
+					<End>2025-04-30T23:00:00.000+01:00</End>
+					<RegisterEndIndexDetailRegisterObservation>
+						<RegisterQuantity unitCode="KWH">2363.877</RegisterQuantity>
+						<QuantityQuality listAgencyIdentifier="6">86</QuantityQuality>
+						<MeterReadingOriginType listIdentifier="BEL" listAgencyIdentifier="260">E28</MeterReadingOriginType>
+					</RegisterEndIndexDetailRegisterObservation>
+				</RegisterIntervalRegisterReadPeriod>
+			</RegisterInstallationBERegisterFacility>
+		</MeteringInstallationUsedMeterFacility>
+	</PayloadBEEnergyTimeSeries>
+</MeterReadForInformation>

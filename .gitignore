@@ -1,6 +1,8 @@
 cache
 node_modules
 xmlns
-output/*
+output
+avroSchemas
+.DS_Store
 
 !output/README.md

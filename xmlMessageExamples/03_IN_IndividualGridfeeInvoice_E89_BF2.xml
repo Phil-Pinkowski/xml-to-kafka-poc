@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:IndividualGridfeeInvoice xmlns:rsm="un:unece:260:data:EEM:02-16-IndividualGridfeeInvoice" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>aa268b7a-652a-4981-b495-143814bfbd98</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="6">82</rsm:DocumentType>
+    <rsm:Creation>2024-08-05T15:34:05.962+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488001001</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-16.001</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260">E89</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BF2</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEInvoiceEvent>
+    <rsm:Identification>3ddb5755-7d5f-4b8e-84ea-951e03805bb6</rsm:Identification>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:CalculationDateOccurrence>2024-08-05T15:34:03.843+01:00</rsm:CalculationDateOccurrence>
+    <rsm:MeteringPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:MeteringPeriodStartOccurrence>
+    <rsm:MeteringPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:MeteringPeriodEndOccurrence>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860008107873</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860008107873</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:ReferenceUsedBEReferenceCharacteristic>
+      <rsm:ReferenceIdentification>84949d47-c8a6-491c-bc35-87a803141aef</rsm:ReferenceIdentification>
+      <rsm:ReferenceType listAgencyIdentifier="260" listIdentifier="BEL">BK6</rsm:ReferenceType>
+      <rsm:ReferenceDate>2024-08-05T15:34:05.000+01:00</rsm:ReferenceDate>
+    </rsm:ReferenceUsedBEReferenceCharacteristic>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E290</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877125</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWT">1182.0780000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.1243623</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">147.01</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E290_VDZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E291</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877126</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">3168.5830000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0110619</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">35.05</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E291_QPZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E280</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877127</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="DAY">153.0000000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0346027</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">5.29</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E280_BDZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E215</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877128</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1060.7370000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0254153</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">26.96</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E215_QOH</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E215</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877129</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">2107.8460000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0254153</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">53.57</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E215_QOL</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E801</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877130</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">3168.5830000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0021595</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">6.84</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E801_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E990</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">T</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877131</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">3168.5830000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0045278</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">14.35</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">T_E990_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E298</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877132</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="EA">0.0000000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E298_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E010</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877133</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1060.7370000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E010_KWH_HI</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E020</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877134</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">2107.8460000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E020_KWH_LO</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E051</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877135</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWT">7.7260000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E051_KW</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E010</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877136</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1040.8980000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_I_E010_KWH_HI</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2023-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E020</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877137</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">335.7020000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_I_E020_KWH_LO</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E290</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877138</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWT">1645.6380000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.1198879</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">197.29</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E290_VDZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E291</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877139</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">2836.2030000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0115993</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">32.90</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E291_QPZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E280</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877140</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="DAY">213.0000000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0359563</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">7.66</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E280_BDZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E215</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877141</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">916.2850000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0309005</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">28.31</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E215_QOH</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E215</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877142</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1919.9180000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0309005</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">59.33</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E215_QOL</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E801</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877143</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">2836.2030000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0015225</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">4.32</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E801_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E990</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">T</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877144</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">2836.2030000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0057101</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">16.20</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">T_E990_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E298</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877145</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="EA">0.0000000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">D_E298_QOZ</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E010</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877146</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">916.2850000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E010_KWH_HI</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E020</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877147</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1919.9180000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E020_KWH_LO</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E051</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877148</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWT">7.7260000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_A_E051_KW</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E010</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877149</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">1950.6520000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_I_E010_KWH_HI</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:InvoicingPeriodStartOccurrence>2024-01-01T00:00:00.000+01:00</rsm:InvoicingPeriodStartOccurrence>
+      <rsm:InvoicingPeriodEndOccurrence>2024-07-31T23:00:00.000+01:00</rsm:InvoicingPeriodEndOccurrence>
+      <rsm:GlobalizationCode>E020</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877150</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:DeliveredQuantity unitCode="KWH">616.8740000</rsm:DeliveredQuantity>
+        <rsm:ItemPriceExclusiveAllowancesCharges currencyCode="EUR">0.0000000</rsm:ItemPriceExclusiveAllowancesCharges>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">Q_I_E020_KWH_LO</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+      <rsm:GridfeeTariff>C63_BA008E</rsm:GridfeeTariff>
+      <rsm:MeterReadingFrequencyGridDuration>P1Y</rsm:MeterReadingFrequencyGridDuration>
+    </rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+  </rsm:PayloadBEInvoiceEvent>
+</rsm:IndividualGridfeeInvoice>

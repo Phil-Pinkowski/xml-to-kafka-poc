@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	XSD INFORMATION
+	XSD name: Atrias-MIG6-DEX-GetMessage-MsgDefinitions
+	Version: 02-16.001
+	Issue date: 14/04/2023
+	Issued by: Atrias
+	Description: This XSD imports the UMIG messages to enable the following operations from the WSDL:
+		- GetMessage
+		- GetMessageCount
+-->
+<xs:schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.atrias.be/msg/umig6-dex/02-16/GetMessage" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:msgtns="http://www.atrias.be/msg/umig6-dex/02-16/GetMessage"
+
+xmlns:rsm77-02-16="un:unece:260:data:EEM:02-16-MeterReadForInformation"
+xmlns:rsm71-02-02="un:unece:260:data:EEM:02-02-MeterReadContinuous"
+
+elementFormDefault="qualified">
+
+<!-- IMPORTS -->
+	<!-- Major version 02-16 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-16-MeterReadForInformation" schemaLocation="../XSD/MeterReadForInformation_02-16p001.xsd"/>
+	<!-- Major version 02-02 -->
+		<xs:import namespace="un:unece:260:data:EEM:02-02-MeterReadContinuous" schemaLocation="../XSD/MeterReadContinuous_02-02p003.xsd"/>
+	
+<!-- SIMPLE TYPES -->
+	<xs:simpleType name="MessageId">
+		<xs:restriction base="xs:string">
+			<xs:pattern
+				value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}">
+			</xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="Queue">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Other"/>
+			<xs:enumeration value="Timeseries"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="DocumentType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
+<!-- COMPLEX TYPES -->
+	<xs:complexType name="GetMessage">
+		<xs:sequence>
+			<xs:element name="MessageId" type="msgtns:MessageId"/>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageResponse">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+			<xs:element name="MessageId" type="msgtns:MessageId"/>
+			<xs:element minOccurs="0" name="DocumentType" type="msgtns:DocumentType"/>
+			<xs:element minOccurs="0" name="Payload" type="msgtns:Payload"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageCount">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="GetMessageCountResponse">
+		<xs:sequence>
+			<xs:element name="Queue" type="msgtns:Queue"/>
+			<xs:element name="Count" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SoapFaultDoc">
+		<xs:sequence>
+			<xs:element name="faultCode" type="xs:string"/>
+			<xs:element name="faultMessage" type="xs:string"/>
+			<xs:element name="status" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Payload">
+		<xs:choice>
+			<!-- Major version 02-16 messages -->
+				<xs:element ref="rsm77-02-16:MeterReadForInformation"/>
+			<!-- Major version 02-02 messages -->
+				<xs:element ref="rsm71-02-02:MeterReadContinuous"/>
+		</xs:choice>
+	</xs:complexType>
+	
+</xs:schema>

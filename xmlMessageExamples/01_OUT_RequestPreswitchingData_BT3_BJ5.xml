@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:RequestPreswitchingData>
+	<n1:HeaderBEEnergyDocument>
+		<n1:Identification>69e4b9fb-edf3-1fd0-95e5-0ec435333b8c</n1:Identification>
+		<n1:DocumentType listAgencyIdentifier="6">21</n1:DocumentType>
+		<n1:Creation>2025-06-01T12:21:44.000+01:00</n1:Creation>
+		<n1:SenderBEEnergyParty>
+			<n1:Identification schemeAgencyIdentifier="9">5499764353302</n1:Identification>
+		</n1:SenderBEEnergyParty>
+		<n1:RecipientBEEnergyParty>
+			<n1:Identification schemeAgencyIdentifier="9">5430000544054</n1:Identification>
+		</n1:RecipientBEEnergyParty>
+		<n1:IssuerBEEnergyParty>
+			<n1:Identification schemeAgencyIdentifier="9">5499764353302</n1:Identification>
+		</n1:IssuerBEEnergyParty>
+		<n1:AddresseeBEEnergyParty>
+			<n1:Identification schemeAgencyIdentifier="9">5430000544054</n1:Identification>
+		</n1:AddresseeBEEnergyParty>
+		<n1:DocumentStructureRevision>02-22.003</n1:DocumentStructureRevision>
+	</n1:HeaderBEEnergyDocument>
+	<n1:ProcessBEEnergyContext>
+		<n1:EnergyBusinessProcess listIdentifier="BEL" listAgencyIdentifier="260">BT3</n1:EnergyBusinessProcess>
+		<n1:EnergyBusinessLabel listIdentifier="BEL" listAgencyIdentifier="260">BJ5</n1:EnergyBusinessLabel>
+		<n1:EnergyIndustryClassification listAgencyIdentifier="6">23</n1:EnergyIndustryClassification>
+	</n1:ProcessBEEnergyContext>
+	<n1:PayloadBEGenericRequest
+		xmlns:n1="un:unece:260:data:EEM:02-09-RequestPreswitchingData">
+		<n1:Identification>39829dd9-160c-1fe0-8fdb-53275642f78a</n1:Identification>
+		<n1:EndOccurrence>2025-06-01T12:21:44.000+01:00</n1:EndOccurrence>
+		<n1:HeadpointUsedDomainLocation>
+			<n1:Identification schemeAgencyIdentifier="9">541448860023500130</n1:Identification>
+		</n1:HeadpointUsedDomainLocation>
+	</n1:PayloadBEGenericRequest>
+</n1:RequestPreswitchingData>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	WSDL INFORMATION
+	WSDL name: Atrias-MIG6-CMS-SendSyncRequest
+	Version: 02-22.002
+	Issue date: 13/01/2025
+	Issued by: Atrias
+	Description: This WSDL exposes the following operations from CMS to the Market Parties:
+		- PreswitchBasic
+		- PreswitchLight
+		- StartAccess
+		- MoveIn
+		- IndexPlausibility
+-->
+<wsdl:definitions 
+	name="Atrias-MIG6-CMS-SendSyncRequest" 
+	targetNamespace="http://www.atrias.be/msg/umig6/02-22/wsdl" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"  
+	xmlns:wsdltns="http://www.atrias.be/msg/umig6/02-22/wsdl" 
+	xmlns:msgtns="http://www.atrias.be/msg/umig6/02-22/SendSyncRequest" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"  
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+	<wsdl:types>
+		<xsd:schema 
+			targetNamespace="http://www.atrias.be/msg/umig6/02-22/SendSyncRequest" 
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"   
+			elementFormDefault="qualified">
+			<xsd:include schemaLocation="./Atrias-MIG6-CMS-SendSyncRequest-MsgDefinitions_02-22p002.xsd"/>
+			<xsd:element name="PreSwitchBasic" type="msgtns:PreSwitchBasicRequest"/> 
+			<xsd:element name="PreSwitchBasicResponse" type="msgtns:PreSwitchBasicResponse"/>
+			<xsd:element name="PreSwitchLight" type="msgtns:PreSwitchLightRequest"/>
+			<xsd:element name="PreSwitchLightResponse" type="msgtns:PreSwitchLightResponse"/>
+			<xsd:element name="StartAccess" type="msgtns:StartAccessRequest"/>
+			<xsd:element name="StartAccessResponse" type="msgtns:StartAccessResponse"/>
+			<xsd:element name="MoveIn" type="msgtns:MoveInRequest"/>
+			<xsd:element name="MoveInResponse" type="msgtns:MoveInResponse"/>
+			<xsd:element name="PlausibilityCheck" type="msgtns:IndexPlausibilityRequest"/>
+			<xsd:element name="PlausibilityCheckResponse" type="msgtns:IndexPlausibilityResponse"/>
+			<xsd:element name="SoapFaultDoc" type="msgtns:SoapFaultDoc"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="PreSwitchBasic">
+		<wsdl:part name="psbreq" element="msgtns:PreSwitchBasic"/>
+	</wsdl:message>
+	<wsdl:message name="PreSwitchBasicResponse">
+		<wsdl:part name="psbrsp" element="msgtns:PreSwitchBasicResponse"/>
+	</wsdl:message>
+	<wsdl:message name="PreSwitchLight">
+		<wsdl:part name="pslreq" element="msgtns:PreSwitchLight"/>
+	</wsdl:message>
+	<wsdl:message name="PreSwitchLightResponse">
+		<wsdl:part name="pslrsp" element="msgtns:PreSwitchLightResponse"/>
+	</wsdl:message>
+	<wsdl:message name="StartAccess">
+		<wsdl:part name="sareq" element="msgtns:StartAccess"/>
+	</wsdl:message>
+	<wsdl:message name="StartAccessResponse">
+		<wsdl:part name="sarsp" element="msgtns:StartAccessResponse"/>
+	</wsdl:message>
+	<wsdl:message name="MoveIn">
+		<wsdl:part name="mireq" element="msgtns:MoveIn"/>
+	</wsdl:message>
+	<wsdl:message name="MoveInResponse">
+		<wsdl:part name="mirsp" element="msgtns:MoveInResponse"/>
+	</wsdl:message>
+	<wsdl:message name="PlausibilityCheck">
+		<wsdl:part name="ipcreq" element="msgtns:PlausibilityCheck"/>
+	</wsdl:message>
+	<wsdl:message name="PlausibilityCheckResponse">
+		<wsdl:part name="ipcrsp" element="msgtns:PlausibilityCheckResponse"/>
+	</wsdl:message>
+	<wsdl:message name="SendMessageSoapFaultDoc">
+		<wsdl:part name="SoapFaultDoc" element="msgtns:SoapFaultDoc"/>
+	</wsdl:message>
+	<wsdl:portType name="SendSyncRequest_PortType">
+		<wsdl:operation name="PreSwitchBasic">
+			<wsdl:input name="PreSwitchBasic" message="wsdltns:PreSwitchBasic"/>
+			<wsdl:output name="PreSwitchBasicResponse" message="wsdltns:PreSwitchBasicResponse"/>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc"/>
+		</wsdl:operation>
+		<wsdl:operation name="PreSwitchLight">
+			<wsdl:input name="PreSwitchLight" message="wsdltns:PreSwitchLight"/>
+			<wsdl:output name="PreSwitchLightResponse" message="wsdltns:PreSwitchLightResponse"/>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc"/>
+		</wsdl:operation>
+		<wsdl:operation name="StartAccess">
+			<wsdl:input name="StartAccess" message="wsdltns:StartAccess"/>
+			<wsdl:output name="StartAccessResponse" message="wsdltns:StartAccessResponse"/>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc"/>
+		</wsdl:operation>
+		<wsdl:operation name="MoveIn">
+			<wsdl:input name="MoveIn" message="wsdltns:MoveIn"/>
+			<wsdl:output name="MoveInResponse" message="wsdltns:MoveInResponse"/>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc"/>
+		</wsdl:operation>
+		<wsdl:operation name="PlausibilityCheck">
+			<wsdl:input name="PlausibilityCheck" message="wsdltns:PlausibilityCheck"/>
+			<wsdl:output name="PlausibilityCheckResponse" message="wsdltns:PlausibilityCheckResponse"/>
+			<wsdl:fault name="SoapFaultDoc" message="wsdltns:SendMessageSoapFaultDoc"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="AtriasMIG6_SendSyncRequest_Binder" type="wsdltns:SendSyncRequest_PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="PreSwitchBasic">
+			<soap:operation soapAction="PreSwitchBasic"/>
+			<wsdl:input>
+				<soap:body parts="psbreq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="psbrsp" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>		
+		<wsdl:operation name="PreSwitchLight">
+			<soap:operation soapAction="PreSwitchLight"/>
+			<wsdl:input>
+				<soap:body parts="pslreq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="pslrsp" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="StartAccess">
+			<soap:operation soapAction="StartAccess"/>
+			<wsdl:input>
+				<soap:body parts="sareq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="sarsp" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="MoveIn">
+			<soap:operation soapAction="MoveIn"/>
+			<wsdl:input>
+				<soap:body parts="mireq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="mirsp" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+		<wsdl:operation name="PlausibilityCheck">
+			<soap:operation soapAction="PlausibilityCheck"/>
+			<wsdl:input>
+				<soap:body parts="ipcreq" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="ipcrsp" use="literal"/>
+			</wsdl:output>
+			<wsdl:fault name="SoapFaultDoc">
+				<soap:fault name="SoapFaultDoc" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="AtriasMIG6_SendSyncRequest">
+		<wsdl:port name="AtriasMIG6_SendSyncRequest_Port" binding="wsdltns:AtriasMIG6_SendSyncRequest_Binder">
+			<soap:address location="https://server.dummyendpoint:9999/mig6/xx-yy/Atrias-MIG6-CMS-SendSyncRequest"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

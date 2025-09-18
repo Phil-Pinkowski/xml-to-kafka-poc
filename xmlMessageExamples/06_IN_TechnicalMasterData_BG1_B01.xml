@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:TechnicalMasterData xmlns:rsm="un:unece:260:data:EEM:02-17-TechnicalMasterData" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>c5f993c4-55fd-46a5-9d2d-fc2f742ab162</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="260">E07</rsm:DocumentType>
+    <rsm:Creation>2025-06-01T15:19:18.843+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-17.003</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260" listIdentifier="BEL">BG1</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">B01</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEMasterDataMPEvent>
+    <rsm:Identification>015c3b14-63c5-48b9-855b-1b2c5430aa3e</rsm:Identification>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:StartOccurrence>2025-05-14T23:00:00.000+01:00</rsm:StartOccurrence>
+    <rsm:BalanceResponsibleInvolvedBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5413012999999</rsm:Identification>
+    </rsm:BalanceResponsibleInvolvedBEEnergyParty>
+    <rsm:BalanceSupplierInvolvedBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:BalanceSupplierInvolvedBEEnergyParty>
+    <rsm:GridAccessProviderInvolvedBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:GridAccessProviderInvolvedBEEnergyParty>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:MPAddressMeteringPointAddress>
+      <rsm:Postcode>9400</rsm:Postcode>
+      <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+      <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+      <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+      <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+      <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+      <rsm:Language listAgencyIdentifier="5">NL</rsm:Language>
+    </rsm:MPAddressMeteringPointAddress>
+    <rsm:MPAddressMeteringPointAddress>
+      <rsm:Postcode>9400</rsm:Postcode>
+      <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+      <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+      <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+      <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+      <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+      <rsm:Language listAgencyIdentifier="5">FR</rsm:Language>
+    </rsm:MPAddressMeteringPointAddress>
+    <rsm:MPAddressMeteringPointAddress>
+      <rsm:Postcode>9400</rsm:Postcode>
+      <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+      <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+      <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+      <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+      <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+      <rsm:Language listAgencyIdentifier="5">DE</rsm:Language>
+    </rsm:MPAddressMeteringPointAddress>
+    <rsm:PhysicalMPCharacteristicBEMeteringPointCharacteristic>
+      <rsm:PhysicalStatusType listAgencyIdentifier="260">E22</rsm:PhysicalStatusType>
+      <rsm:MeteringPointType listAgencyIdentifier="260">E17</rsm:MeteringPointType>
+      <rsm:VoltageLevelType listAgencyIdentifier="260">E06</rsm:VoltageLevelType>
+      <rsm:ActiveCopperLossValue>0</rsm:ActiveCopperLossValue>
+      <rsm:ActiveIronLossValue unitCode="Z19">0</rsm:ActiveIronLossValue>
+      <rsm:InstalledPowerValue unitCode="KVA">17.3</rsm:InstalledPowerValue>
+      <rsm:ReactiveCopperLossValue>0</rsm:ReactiveCopperLossValue>
+      <rsm:ReactiveIronLossValue unitCode="K3">0</rsm:ReactiveIronLossValue>
+    </rsm:PhysicalMPCharacteristicBEMeteringPointCharacteristic>
+    <rsm:MeteringInstallationUsedMeterFacility>
+      <rsm:MeterIdentification>541448860023500130</rsm:MeterIdentification>
+      <rsm:MeterCharacteristicBEMeterCharacteristic>
+        <rsm:PurposeType listAgencyIdentifier="260" listIdentifier="BEL">B43</rsm:PurposeType>
+      </rsm:MeterCharacteristicBEMeterCharacteristic>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>E11B31KWH</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">BR4</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B28</rsm:IncrementationType>
+          <rsm:LoadProfileType listAgencyIdentifier="260" listIdentifier="BEL">S03</rsm:LoadProfileType>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>E10B31KWH</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">BR4</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B28</rsm:IncrementationType>
+          <rsm:LoadProfileType listAgencyIdentifier="260" listIdentifier="BEL">S03</rsm:LoadProfileType>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>B37BFPKWT</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">B37</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">BR4</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B28</rsm:IncrementationType>
+          <rsm:LoadProfileType listAgencyIdentifier="260" listIdentifier="BEL">S04</rsm:LoadProfileType>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000016</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWT</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+    </rsm:MeteringInstallationUsedMeterFacility>
+    <rsm:MeteringInstallationUsedMeterFacility>
+      <rsm:MeterIdentification>1LGZ0568639651</rsm:MeterIdentification>
+      <rsm:MeterCharacteristicBEMeterCharacteristic>
+        <rsm:PurposeType listAgencyIdentifier="260" listIdentifier="BEL">B25</rsm:PurposeType>
+        <rsm:MeterType listAgencyIdentifier="260" listIdentifier="BEL">BR1</rsm:MeterType>
+        <rsm:InstalledFunctionalityType listAgencyIdentifier="260" listIdentifier="BEL">BR2</rsm:InstalledFunctionalityType>
+        <rsm:DisplayTechnologyType listAgencyIdentifier="260" listIdentifier="BEL">BD0</rsm:DisplayTechnologyType>
+        <rsm:ReadingCharacteristicType listAgencyIdentifier="260" listIdentifier="BEL">BH7</rsm:ReadingCharacteristicType>
+      </rsm:MeterCharacteristicBEMeterCharacteristic>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>1/1.8.1</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B27</rsm:IncrementationType>
+          <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>2/1.8.2</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B27</rsm:IncrementationType>
+          <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>3/2.8.1</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E18</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B27</rsm:IncrementationType>
+          <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+      <rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterIdentification>4/2.8.2</rsm:RegisterIdentification>
+        <rsm:RegisterCharacteristicBERegisterCharacteristic>
+          <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+          <rsm:DirectionType listAgencyIdentifier="260">E18</rsm:DirectionType>
+          <rsm:IncrementationType listAgencyIdentifier="260" listIdentifier="BEL">B27</rsm:IncrementationType>
+          <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+          <rsm:MeasuredEnergyType schemeAgencyIdentifier="9">8716867000030</rsm:MeasuredEnergyType>
+          <rsm:UnitOfMeasureType listAgencyIdentifier="6">KWH</rsm:UnitOfMeasureType>
+          <rsm:MeteringMethodType listAgencyIdentifier="260" listIdentifier="BEL">E14</rsm:MeteringMethodType>
+          <rsm:VirtualBaseIndicator>false</rsm:VirtualBaseIndicator>
+        </rsm:RegisterCharacteristicBERegisterCharacteristic>
+      </rsm:RegisterInstallationBERegisterFacility>
+    </rsm:MeteringInstallationUsedMeterFacility>
+    <rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+      <rsm:UtilizationCategoryType listAgencyIdentifier="260" listIdentifier="BEL">BAE</rsm:UtilizationCategoryType>
+      <rsm:AdditionalSettlementProcessingIndicator>false</rsm:AdditionalSettlementProcessingIndicator>
+      <rsm:GridfeeTariff>C09_BA006E</rsm:GridfeeTariff>
+      <rsm:SettlementMethodType listAgencyIdentifier="260" listIdentifier="BEL">BU9</rsm:SettlementMethodType>
+      <rsm:SubscribedPowerValue unitCode="KVA">17.3</rsm:SubscribedPowerValue>
+      <rsm:UnoccupiedLocationIndicator>false</rsm:UnoccupiedLocationIndicator>
+      <rsm:MeterReadingFrequencyInformationDuration>P1M</rsm:MeterReadingFrequencyInformationDuration>
+      <rsm:MeteringRegimeType listAgencyIdentifier="260" listIdentifier="BEL">R1</rsm:MeteringRegimeType>
+      <rsm:EnergyBillingTimeFrameSetType listAgencyIdentifier="260" listIdentifier="BEL">BBI</rsm:EnergyBillingTimeFrameSetType>
+      <rsm:GridfeeTimeFrameSetType listAgencyIdentifier="260" listIdentifier="BEL">BBI</rsm:GridfeeTimeFrameSetType>
+      <rsm:MeterReadingFrequencyBillingDuration>P1Y</rsm:MeterReadingFrequencyBillingDuration>
+      <rsm:MeterReadingMonth>--05</rsm:MeterReadingMonth>
+      <rsm:MeterReadingFrequencyGridDuration>P1Y</rsm:MeterReadingFrequencyGridDuration>
+      <rsm:FunctionalGroupUsedBEAreaLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">5414488020040</rsm:Identification>
+      </rsm:FunctionalGroupUsedBEAreaLocation>
+    </rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+    <rsm:RelatedTransactionIdentification>4342fc61-a611-1fe0-8fdb-684b5d74708d</rsm:RelatedTransactionIdentification>
+  </rsm:PayloadBEMasterDataMPEvent>
+</rsm:TechnicalMasterData>

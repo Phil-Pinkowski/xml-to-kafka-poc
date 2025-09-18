@@ -3,23 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "generate-ts": "cxsd https://www.nemmco.com.au/asexml/schemas/r44/aseXML_r44.xsd",
-    "generate-json-schema": "tsx convertToJsonSchema.ts",
-    "convert-xml-to-json": "node xmlToJson.js > output/c4.json",
-    "validate-json-against-schema": "node validate.js",
-    "example": "npm run generate-ts && npm run generate-json-schema && npm run convert-xml-to-json && npm run validate-json-against-schema"
+    "convert-xml-schemas-to-avro": "./scripts/convertSchemas.sh"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^14.2.0",
+    "@types/node": "^24.3.0",
     "@wikipathways/cxml": "^0.2.14",
-    "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1",
-    "cxsd": "^0.1.1",
+    "avsc": "^5.7.9",
+    "cxsd": "github:beaulac/cxsd",
     "fast-xml-parser": "^4.5.0",
+    "jsonschema-avro": "^2.1.1",
     "source-map-support": "^0.5.21",
-    "ts-json-schema-generator": "^2.3.0",
+    "ts-json-schema-generator": "^2.4.0",
     "tsx": "^4.19.2"
   }
 }

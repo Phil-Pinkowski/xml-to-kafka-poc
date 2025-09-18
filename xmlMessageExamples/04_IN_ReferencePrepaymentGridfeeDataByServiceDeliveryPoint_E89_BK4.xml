@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:ReferencePrepaymentGridfeeDataByServiceDeliveryPoint xmlns:rsm="un:unece:260:data:EEM:02-06-ReferencePrepaymentGridfeeDataByServiceDeliveryPoint" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>4b23b701-6367-4183-835f-60e33e08b911</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="6">325</rsm:DocumentType>
+    <rsm:Creation>2024-08-05T15:34:06.883+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488001001</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-06.002</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260">E89</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BK4</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBEInvoiceEvent>
+    <rsm:Identification>5e142703-454b-4196-a129-5417f923a83e</rsm:Identification>
+    <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+    <rsm:CalculationDateOccurrence>2024-08-05T15:34:06.233+01:00</rsm:CalculationDateOccurrence>
+    <rsm:StartOccurrence>2024-08-04T23:00:00.000+01:00</rsm:StartOccurrence>
+    <rsm:SDPUsedServiceDeliveryPointLocation>
+      <rsm:HeadpointIdentificationDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860008107873</rsm:Identification>
+      </rsm:HeadpointIdentificationDomainLocation>
+      <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFINJE</rsm:ServiceComponentIdentification>
+    </rsm:SDPUsedServiceDeliveryPointLocation>
+    <rsm:PODUsedDomainLocation>
+      <rsm:Identification schemeAgencyIdentifier="9">541448860008107873</rsm:Identification>
+    </rsm:PODUsedDomainLocation>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:GlobalizationCode>E499</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.0000000000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877432</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">0.00</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">E_D_0.00</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:GlobalizationCode>E499</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">D</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877424</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">52.19</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">E_D_0.21</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+      <rsm:GlobalizationCode>E799</rsm:GlobalizationCode>
+      <rsm:VATCharacteristicBEVATCharacteristic>
+        <rsm:CostCategoryType listAgencyIdentifier="260" listIdentifier="BEL">T</rsm:CostCategoryType>
+        <rsm:VATRateValue>0.2100000000000000</rsm:VATRateValue>
+      </rsm:VATCharacteristicBEVATCharacteristic>
+      <rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+        <rsm:LineItemNumber>15431877430</rsm:LineItemNumber>
+        <rsm:CreditLineIndicator>+</rsm:CreditLineIndicator>
+        <rsm:AmountExclusiveAllowancesCharges currencyCode="EUR">2.90</rsm:AmountExclusiveAllowancesCharges>
+        <rsm:FactorInformationTradeItemIdentification>
+          <rsm:AdditionalTradeItemIdentification schemeAgencyIdentifier="86">E_T_0.21</rsm:AdditionalTradeItemIdentification>
+        </rsm:FactorInformationTradeItemIdentification>
+      </rsm:InvoiceLineItemInvolvedInvoiceLineItem>
+    </rsm:BEInvoiceLineItemInvolvedBEInvoiceLineItem>
+    <rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+      <rsm:GridfeeTariff>C63_BA008E</rsm:GridfeeTariff>
+      <rsm:MeterReadingFrequencyGridDuration>P1Y</rsm:MeterReadingFrequencyGridDuration>
+    </rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+  </rsm:PayloadBEInvoiceEvent>
+</rsm:ReferencePrepaymentGridfeeDataByServiceDeliveryPoint>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:LightPreswitchInformationSynchronous xmlns:rsm="un:unece:260:data:EEM:02-22-LightPreswitchInformationSynchronous" xmlns:ccts="urn:un:unece:uncefact:documentation:common:3:standard:CoreComponentsTechnicalSpecification:3" xmlns:xbt="urn:un:unece:uncefact:data:common:1:draft" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rsm:HeaderBEEnergyDocument>
+    <rsm:Identification>bae6d0ef-147c-4383-bdc7-c51981241e64</rsm:Identification>
+    <rsm:DocumentType listAgencyIdentifier="6">22</rsm:DocumentType>
+    <rsm:Creation>2025-06-01T12:21:47.192+01:00</rsm:Creation>
+    <rsm:SenderBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+    </rsm:SenderBEEnergyParty>
+    <rsm:RecipientBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:RecipientBEEnergyParty>
+    <rsm:IssuerBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5430000544054</rsm:Identification>
+    </rsm:IssuerBEEnergyParty>
+    <rsm:AddresseeBEEnergyParty>
+      <rsm:Identification schemeAgencyIdentifier="9">5499764353302</rsm:Identification>
+    </rsm:AddresseeBEEnergyParty>
+    <rsm:DocumentStructureRevision>02-22.002</rsm:DocumentStructureRevision>
+  </rsm:HeaderBEEnergyDocument>
+  <rsm:ProcessBEEnergyContext>
+    <rsm:EnergyBusinessProcess listAgencyIdentifier="260" listIdentifier="BEL">BT3</rsm:EnergyBusinessProcess>
+    <rsm:EnergyBusinessLabel listAgencyIdentifier="260" listIdentifier="BEL">BJ5</rsm:EnergyBusinessLabel>
+    <rsm:EnergyIndustryClassification listAgencyIdentifier="6">23</rsm:EnergyIndustryClassification>
+  </rsm:ProcessBEEnergyContext>
+  <rsm:PayloadBESynchronousEvent>
+    <rsm:Identification>f8b20501-6887-45a8-aa1e-123b35c136d4</rsm:Identification>
+    <rsm:MPEventAcceptedBEMPEvent>
+      <rsm:EndOccurrence>2025-06-01T12:21:45.000+01:00</rsm:EndOccurrence>
+      <rsm:Function listAgencyIdentifier="6">9</rsm:Function>
+      <rsm:GridAccessProviderInvolvedBEEnergyParty>
+        <rsm:Identification schemeAgencyIdentifier="9">5414488000806</rsm:Identification>
+      </rsm:GridAccessProviderInvolvedBEEnergyParty>
+      <rsm:HeadpointUsedDomainLocation>
+        <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+      </rsm:HeadpointUsedDomainLocation>
+      <rsm:PhysicalMPCharacteristicBEMeteringPointCharacteristic>
+        <rsm:PhysicalStatusType listAgencyIdentifier="260">E22</rsm:PhysicalStatusType>
+        <rsm:MeteringPointType listAgencyIdentifier="260">E17</rsm:MeteringPointType>
+      </rsm:PhysicalMPCharacteristicBEMeteringPointCharacteristic>
+      <rsm:MPAddressMeteringPointAddress>
+        <rsm:Postcode>9400</rsm:Postcode>
+        <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+        <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+        <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+        <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+        <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+        <rsm:Language listAgencyIdentifier="5">NL</rsm:Language>
+      </rsm:MPAddressMeteringPointAddress>
+      <rsm:MPAddressMeteringPointAddress>
+        <rsm:Postcode>9400</rsm:Postcode>
+        <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+        <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+        <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+        <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+        <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+        <rsm:Language listAgencyIdentifier="5">FR</rsm:Language>
+      </rsm:MPAddressMeteringPointAddress>
+      <rsm:MPAddressMeteringPointAddress>
+        <rsm:Postcode>9400</rsm:Postcode>
+        <rsm:BuildingNumber>142 A</rsm:BuildingNumber>
+        <rsm:FloorIdentification>A1</rsm:FloorIdentification>
+        <rsm:StreetName>GERAARDSBERGSESTEENWEG</rsm:StreetName>
+        <rsm:CityName>NEDERHASSELT (NINOVE)</rsm:CityName>
+        <rsm:CountryName schemeAgencyIdentifier="5">BE</rsm:CountryName>
+        <rsm:Language listAgencyIdentifier="5">DE</rsm:Language>
+      </rsm:MPAddressMeteringPointAddress>
+      <rsm:ReferenceTransactionIdentification>39829dd9-160c-1fe0-8fdb-53275642f78a</rsm:ReferenceTransactionIdentification>
+      <rsm:MeteringInstallationUsedMeterFacility>
+        <rsm:MeterIdentification>1LGZ0568639651</rsm:MeterIdentification>
+        <rsm:RegisterInstallationBERegisterFacility>
+          <rsm:RegisterIdentification>1/1.8.1</rsm:RegisterIdentification>
+          <rsm:RegisterCharacteristicBERegisterCharacteristic>
+            <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+            <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+            <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+            <rsm:NumberOfDigitsBeforeCommaValue>6</rsm:NumberOfDigitsBeforeCommaValue>
+          </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        </rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterInstallationBERegisterFacility>
+          <rsm:RegisterIdentification>2/1.8.2</rsm:RegisterIdentification>
+          <rsm:RegisterCharacteristicBERegisterCharacteristic>
+            <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+            <rsm:DirectionType listAgencyIdentifier="260">E17</rsm:DirectionType>
+            <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+            <rsm:NumberOfDigitsBeforeCommaValue>6</rsm:NumberOfDigitsBeforeCommaValue>
+          </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        </rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterInstallationBERegisterFacility>
+          <rsm:RegisterIdentification>3/2.8.1</rsm:RegisterIdentification>
+          <rsm:RegisterCharacteristicBERegisterCharacteristic>
+            <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E11</rsm:MeterTimeFrameType>
+            <rsm:DirectionType listAgencyIdentifier="260">E18</rsm:DirectionType>
+            <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+            <rsm:NumberOfDigitsBeforeCommaValue>6</rsm:NumberOfDigitsBeforeCommaValue>
+          </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        </rsm:RegisterInstallationBERegisterFacility>
+        <rsm:RegisterInstallationBERegisterFacility>
+          <rsm:RegisterIdentification>4/2.8.2</rsm:RegisterIdentification>
+          <rsm:RegisterCharacteristicBERegisterCharacteristic>
+            <rsm:MeterTimeFrameType listAgencyIdentifier="260" listIdentifier="BEL">E10</rsm:MeterTimeFrameType>
+            <rsm:DirectionType listAgencyIdentifier="260">E18</rsm:DirectionType>
+            <rsm:NumberOfDigitsValue>9</rsm:NumberOfDigitsValue>
+            <rsm:NumberOfDigitsBeforeCommaValue>6</rsm:NumberOfDigitsBeforeCommaValue>
+          </rsm:RegisterCharacteristicBERegisterCharacteristic>
+        </rsm:RegisterInstallationBERegisterFacility>
+      </rsm:MeteringInstallationUsedMeterFacility>
+      <rsm:ServiceCatalogueOptionServiceComponentCharacteristic>
+        <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+        <rsm:ServiceComponentAvailabilityDate>1900-01-02T00:00:00.000+01:00</rsm:ServiceComponentAvailabilityDate>
+        <rsm:PrimaryServiceComponentIndicator>true</rsm:PrimaryServiceComponentIndicator>
+        <rsm:PODAvailableDomainLocation>
+          <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+        </rsm:PODAvailableDomainLocation>
+        <rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+          <rsm:ConfigurationIdentification schemeAgencyIdentifier="86">301MN</rsm:ConfigurationIdentification>
+          <rsm:ConfigurationAvailabilityDate>2025-05-04T23:00:00.000+01:00</rsm:ConfigurationAvailabilityDate>
+          <rsm:CatalogueTiming>-27</rsm:CatalogueTiming>
+        </rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+        <rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+          <rsm:ConfigurationIdentification schemeAgencyIdentifier="86">301YM</rsm:ConfigurationIdentification>
+          <rsm:ConfigurationAvailabilityDate>2025-05-04T23:00:00.000+01:00</rsm:ConfigurationAvailabilityDate>
+          <rsm:CatalogueTiming>-27</rsm:CatalogueTiming>
+        </rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+        <rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+          <rsm:ConfigurationIdentification schemeAgencyIdentifier="86">101MN</rsm:ConfigurationIdentification>
+          <rsm:ConfigurationAvailabilityDate>2025-04-01T23:00:00.000+01:00</rsm:ConfigurationAvailabilityDate>
+          <rsm:CatalogueTiming>-60</rsm:CatalogueTiming>
+        </rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+        <rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+          <rsm:ConfigurationIdentification schemeAgencyIdentifier="86">101YM</rsm:ConfigurationIdentification>
+          <rsm:ConfigurationAvailabilityDate>2025-03-01T00:00:00.000+01:00</rsm:ConfigurationAvailabilityDate>
+          <rsm:CatalogueTiming>-2000</rsm:CatalogueTiming>
+        </rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+      </rsm:ServiceCatalogueOptionServiceComponentCharacteristic>
+      <rsm:ServiceCatalogueOptionServiceComponentCharacteristic>
+        <rsm:ServiceComponentIdentification schemeAgencyIdentifier="86">SC_OFFTAKE</rsm:ServiceComponentIdentification>
+        <rsm:Start>2024-10-22T23:00:00.000+01:00</rsm:Start>
+        <rsm:End>2154-12-31T23:59:59.000+01:00</rsm:End>
+        <rsm:PrimaryServiceComponentIndicator>true</rsm:PrimaryServiceComponentIndicator>
+        <rsm:PODAvailableDomainLocation>
+          <rsm:Identification schemeAgencyIdentifier="9">541448860023500130</rsm:Identification>
+        </rsm:PODAvailableDomainLocation>
+        <rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+          <rsm:ConfigurationIdentification schemeAgencyIdentifier="86">101YM</rsm:ConfigurationIdentification>
+          <rsm:Start>2024-10-22T23:00:00.000+01:00</rsm:Start>
+          <rsm:End>2025-03-01T00:00:00.000+01:00</rsm:End>
+        </rsm:ConfigurationCatalogueOptionBEConfigurationCatalogueCharacteristic>
+      </rsm:ServiceCatalogueOptionServiceComponentCharacteristic>
+      <rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+        <rsm:AdministrativeStatusType listAgencyIdentifier="260">E32</rsm:AdministrativeStatusType>
+        <rsm:MeterReadingMonth>--05</rsm:MeterReadingMonth>
+        <rsm:MeterReadingFrequencyGridDuration>P1M</rsm:MeterReadingFrequencyGridDuration>
+      </rsm:AdministrativeMPCharacteristicBEMeteringPointAdministrativeCharacteristic>
+    </rsm:MPEventAcceptedBEMPEvent>
+  </rsm:PayloadBESynchronousEvent>
+</rsm:LightPreswitchInformationSynchronous>
