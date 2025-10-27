@@ -23,7 +23,7 @@ The process uses 2 external libraries:
 - UUID: to generate unique names for the generated types
 - @xmldom/xmldom: for internal XML parsing
 
-The script does couple of small things:
+The script does a couple of small things:
 - Parses the XSD to extract the type name (to use as the base name for the generated Avro schema)
 - Iterates through the entire file to generate a map of common types
 - Extract optional and mandatory fields from the XSD to ensure the generated Avro schema reflects this
