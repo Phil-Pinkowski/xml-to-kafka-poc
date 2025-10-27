@@ -119,13 +119,12 @@ function convertXsdToAvro(xsdPath: string, avroDir: string): void {
         case 'decimal':
         case 'short':
         case 'byte':
-          return 'string';
-        // TODO: Try and convert all "integer" types to long but in the future they might have to be "string"
         case 'int':
         case 'integer':
         case 'positiveInteger':
         case 'nonNegativeInteger':
         case 'unsignedInt':
+          return 'string';
         case 'long':
           return 'long';
         case 'boolean':
@@ -441,14 +440,8 @@ function convertXsdToAvro(xsdPath: string, avroDir: string): void {
     const avroSchema: AvroSchema = {
       type: 'record',
       name: '',
-      doc: '',
       fields: [],
     };
-
-    const version = root.getAttribute('version') || '';
-    if (version) {
-      avroSchema.doc = `Version ${version}`;
-    }
 
     const mainElement = findChild(root, 'element');
     if (!mainElement) {

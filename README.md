@@ -15,6 +15,19 @@ To allow us to process messages, we first automatically generate Avro schema bas
 
 tl;dr: XSD -> TS types -> JSON Schema -> Avro Schema
 
+## XSD to AVRO generation
+
+`./scripts/convertXsdToAvro.ts` takes XSD schemas from `./schemas/XSD` iterates through them and generates equivalent AVRO schemas.
+The process uses 2 external libraries:
+
+- UUID: to generate unique names for the generated types
+- @xmldom/xmldom: for internal XML parsing
+
+The script does couple of small things:
+- Parses the XSD to extract the type name (to use as the base name for the generated Avro schema)
+- Iterates through the entire file to generate a map of common types
+- Extract optional and mandatory fields from the XSD to ensure the generated Avro schema reflects this
+
 ## Running the POC
 
 1. Ensure everything is installed (`npm i`)

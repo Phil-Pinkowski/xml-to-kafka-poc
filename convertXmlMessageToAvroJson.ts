@@ -71,8 +71,7 @@ const avroJson = schema.toString(dataForAvro);
 // log out for now
 const formattedOutput = JSON.stringify(JSON.parse(avroJson), null, 3);
 
-fs.writeFileSync(`./output/${schemaName}_output.json`, formattedOutput);
-
+fs.writeFileSync(`./output/${schemaName}.json`, formattedOutput);
 
 // TODO for a real gateway/inbound pipeline
 // - decide on Kafka topic name (probably just industry_<schema name>_v1)
