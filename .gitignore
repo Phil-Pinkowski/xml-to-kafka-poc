@@ -4,5 +4,6 @@ xmlns
 output
 avroSchemas
 .DS_Store
+schemas/AVRO
 
 !output/README.md

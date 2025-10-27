@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/usr/bin/env bash
 
 rm -rf avroSchemas
 rm -rf xmlns
@@ -35,4 +35,4 @@ for file in xmlns/*.d.ts; do
 done
 
 # Cleanup temporary files
-rm -rf xmlns
+# rm -rf xmlns

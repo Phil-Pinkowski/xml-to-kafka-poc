@@ -1,17 +1,19 @@
-import { XMLParser } from "fast-xml-parser";
-import fs from "fs";
-import avsc from "avsc";
+import avsc from 'avsc';
+import { XMLParser } from 'fast-xml-parser';
+import fs from 'fs';
+import { exit } from 'process';
+
+const filePath = process.argv[2];
 
 // get the message to process from the passed argument
-const xml = fs.readFileSync(process.argv[2], "utf8");
+// Some of the example attribute identifier come with double quotes we need to fix that
+const xml = fs.readFileSync(filePath, 'utf8').replace(/(\w+)=""([^"]+)""/g, '$1="$2"');
 
 // Pull out top level XML object name from the message - this is the schema name
-const schemaName = /<\w+:(\w+)/.exec(xml)?.[1];
+const schemaName = /<(?:\w+:)?(\w+)/.exec(xml)?.[1];
 
 // fetch the schema
-const rawSchema = JSON.parse(
-  fs.readFileSync(`./avroSchemas/${schemaName}.avsc.json`, "utf8")
-);
+const rawSchema = JSON.parse(fs.readFileSync(`./schemas/AVRO/${schemaName}.avsc.json`, 'utf8'));
 
 // Convert to/parse as Avro schema
 const schema = avsc.Type.forSchema(rawSchema as any);
@@ -23,9 +25,9 @@ const arrayItems = getArrayFieldsFromSchema(rawSchema);
 const parser = new XMLParser({
   ignoreDeclaration: true,
   removeNSPrefix: true,
-  textNodeName: "content",
+  textNodeName: 'content',
   ignoreAttributes: false,
-  attributeNamePrefix: "",
+  attributeNamePrefix: '',
   // All numbers are processed as strings
   numberParseOptions: {
     skipLike: /./,
@@ -39,12 +41,38 @@ const parser = new XMLParser({
 });
 
 const json = parser.parse(xml);
+const dataForAvro = {
+  // FIXME: hardcoded metadata for POC
+  metadata: {
+    eventId: 'test',
+    traceToken: 'test',
+    createdAt: Date.now(),
+  },
+  ...json[schemaName!],
+};
 
-// convert parsed JSON to Avro JSON using the schema
-const avroJson = schema.toString(json);
+// Validate the JSON against the schema to get better error messages
+const valid = schema.isValid(dataForAvro, {
+  errorHook: (path, val, type) => {
+    console.error(`Validation Error:`);
+    console.error(`  Path: ${path.join('.')}`);
+    console.error(`  Value: ${JSON.stringify(val, null, 2)}`);
+    console.error(`  Expected Type: ${type}`);
+  },
+});
+
+if (!valid) {
+  console.error('\nSchema validation failed. Exiting.');
+  exit(1);
+}
+
+const avroJson = schema.toString(dataForAvro);
 
 // log out for now
-console.log(avroJson);
+const formattedOutput = JSON.stringify(JSON.parse(avroJson), null, 3);
+
+fs.writeFileSync(`./output/${schemaName}_output.json`, formattedOutput);
+
 
 // TODO for a real gateway/inbound pipeline
 // - decide on Kafka topic name (probably just industry_<schema name>_v1)
@@ -52,36 +80,40 @@ console.log(avroJson);
 // - tidy everything up - it's a POC so is rough and ready :)
 
 // util function: return which fields from the Avro schema have type "array"
-function getArrayFieldsFromSchema(jsonSchema: Record<string, any>): string[] {
-  if (jsonSchema.type === "array") {
-    return [jsonSchema.name, ...getArrayFieldsFromSchema(jsonSchema.items)];
+function getArrayFieldsFromSchema(jsonSchema: any): string[] {
+  const results: string[] = [];
+
+  function traverse(schema: any) {
+    if (!schema) {
+      return;
+    }
+
+    if (schema.type === 'record' && schema.fields) {
+      for (const field of schema.fields) {
+        let fieldType = field.type;
+        // Handle nullable types
+        if (Array.isArray(fieldType)) {
+          fieldType = fieldType.find((t) => t !== 'null');
+        }
+
+        if (fieldType && fieldType.type === 'array') {
+          results.push(field.name);
+          // Recurse into array items to find nested arrays
+          if (fieldType.items) {
+            traverse(fieldType.items);
+          }
+        } else if (fieldType && fieldType.type === 'record') {
+          // Recurse into nested records
+          traverse(fieldType);
+        }
+      }
+    }
+    // This handles the case where the item of an array is a record
+    else if (schema.items && schema.items.type === 'record') {
+      traverse(schema.items);
+    }
   }
-  if (
-    Array.isArray(jsonSchema.type) &&
-    jsonSchema.type.filter((t) => t !== "null")[0].type === "array"
-  ) {
-    return [
-      jsonSchema.name,
-      ...getArrayFieldsFromSchema(
-        jsonSchema.type.filter((t) => t !== "null")[0].items
-      ),
-    ];
-  }
-  if (jsonSchema.type === "record") {
-    return [
-      ...jsonSchema.fields.map((f: any) => getArrayFieldsFromSchema(f)).flat(),
-    ];
-  }
-  if (
-    Array.isArray(jsonSchema.type) &&
-    jsonSchema.type.filter((t) => t !== "null")[0].type === "record"
-  ) {
-    return [
-      ...jsonSchema.type
-        .filter((t) => t !== "null")[0]
-        .fields.map((f: any) => getArrayFieldsFromSchema(f))
-        .flat(),
-    ];
-  }
-  return [];
+
+  traverse(jsonSchema);
+  return results;
 }
