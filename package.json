@@ -3,21 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "convert-xml-schemas-to-avro": "./scripts/convertSchemas.sh"
+    "convert-xml-schemas-to-avro": "./scripts/convertSchemas.sh",
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^14.2.0",
-    "@types/node": "^24.3.0",
+    "@tsconfig/node24": "24.0.1",
     "@wikipathways/cxml": "^0.2.14",
+    "@xmldom/xmldom": "^0.8.11",
     "avsc": "^5.7.9",
     "cxsd": "github:beaulac/cxsd",
-    "fast-xml-parser": "^4.5.0",
+    "fast-xml-parser": "^4.5.3",
     "jsonschema-avro": "^2.1.1",
     "source-map-support": "^0.5.21",
     "ts-json-schema-generator": "^2.4.0",
-    "tsx": "^4.19.2"
+    "tsx": "^4.19.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@types/uuid": "^10.0.0",
+    "vitest": "^4.0.4"
   }
 }
