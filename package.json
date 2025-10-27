@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "convert-xml-schemas-to-avro": "./scripts/convertSchemas.sh"
+    "convert-xml-schemas-to-avro": "./scripts/convertSchemas.sh",
+    "test": "vitest run"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
-    "@types/uuid": "^10.0.0"
+    "@types/uuid": "^10.0.0",
+    "vitest": "^4.0.4"
   }
 }
