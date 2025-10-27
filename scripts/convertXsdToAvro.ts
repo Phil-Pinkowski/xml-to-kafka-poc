@@ -440,6 +440,7 @@ function convertXsdToAvro(xsdPath: string, avroDir: string): void {
     const avroSchema: AvroSchema = {
       type: 'record',
       name: '',
+      namespace: 'com.kaluza.kafka.ia',
       fields: [],
     };
 

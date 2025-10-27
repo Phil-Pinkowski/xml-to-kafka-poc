@@ -35,4 +35,4 @@ for file in xmlns/*.d.ts; do
 done
 
 # Cleanup temporary files
-# rm -rf xmlns
+rm -rf xmlns
